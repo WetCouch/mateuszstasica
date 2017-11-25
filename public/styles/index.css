@@ -1,0 +1,281 @@
+@font-face {
+  font-family: Lato;
+  src: url("../fonts/Lato-Regular.woff2"); }
+
+@font-face {
+  font-family: Lato;
+  font-weight: 300;
+  src: url("../fonts/Lato-Light.woff2"); }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  background-color: #1E1E20;
+  min-height: 100%;
+  position: relative; }
+
+.container {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px; }
+
+.jumbotron {
+  position: relative;
+  width: 100%;
+  height: 60vmax;
+  background-image: url("/images/typewriter-background.jpg");
+  background-size: cover; }
+  .jumbotron .jumbotron-header-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    float: right;
+    margin: auto 20%; }
+    .jumbotron .jumbotron-header-container .jumbotron-header {
+      font-weight: 500;
+      font-size: 2em;
+      color: #1E1E20;
+      text-shadow: 0 1px 2px #000000;
+      text-align: center; }
+  .jumbotron .jumbotron-button {
+    border: none;
+    border-radius: 100px;
+    color: #ECECEE;
+    padding: 8px;
+    background-color: #DC3522;
+    font-size: 1em;
+    position: absolute;
+    bottom: 5%;
+    text-align: center;
+    width: 280px;
+    left: 0;
+    right: 0;
+    margin: 0 auto; }
+  .jumbotron .facebook-profile {
+    position: absolute;
+    width: 30px;
+    top: 20px;
+    right: 20px; }
+
+.content .heading-container {
+  text-align: center; }
+  .content .heading-container .content-heading {
+    display: inline-block;
+    color: #ECECEE;
+    font-size: 2em;
+    font-weight: 300;
+    margin-top: 10%;
+    border-bottom: 2px solid #DC3522;
+    padding-bottom: 1%; }
+
+.content .content-column-container {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 9%; }
+  .content .content-column-container .content-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    width: 25%; }
+    .content .content-column-container .content-column .column-header {
+      display: inline-block;
+      font-size: 1.7em;
+      font-weight: 300;
+      border-bottom: 2px solid #D9CB9E;
+      color: #ECECEE;
+      padding-bottom: 5%;
+      margin-bottom: 10%; }
+    .content .content-column-container .content-column .column-paragraph {
+      font-weight: 300;
+      color: #ECECEE;
+      margin-top: 5%; }
+
+#footer .footer-content {
+  position: absolute;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  color: #ECECEE;
+  font-size: 0.95em; }
+  #footer .footer-content .footer-link {
+    text-decoration: none;
+    color: #D9CB9E;
+    letter-spacing: 3px;
+    transition: 0.4s; }
+  #footer .footer-content .footer-link:hover {
+    color: #DC3522; }
+
+#footer #footer-left {
+  left: 2%; }
+
+#footer #footer-right {
+  float: right;
+  right: 2%; }
+
+#mc_embed_signup {
+  width: 100%; }
+  #mc_embed_signup .validate {
+    font-family: 'Lato', sans-serif;
+    background-color: #1E1E20;
+    color: #ECECEE; }
+    #mc_embed_signup .validate .required {
+      margin: 5%;
+      border-radius: 0;
+      border: 2px solid #ECECEE;
+      background-color: #1E1E20;
+      color: #ECECEE;
+      font-size: 0.9em;
+      transition: 0.4s; }
+    #mc_embed_signup .validate .required:focus {
+      border: 2px solid #DC3522;
+      outline: none; }
+    #mc_embed_signup .validate .column-form-label {
+      font-size: 0.8em; }
+    #mc_embed_signup .validate .clear {
+      text-align: center; }
+      #mc_embed_signup .validate .clear .button {
+        border-radius: 100px;
+        background-color: #DC3522;
+        color: #ECECEE;
+        -webkit-appearance: none; }
+
+@media only screen and (max-width: 769px) {
+  html, body {
+    max-width: 100vw; }
+  .jumbotron {
+    background-image: url("/images/typewriter-mobile.jpg");
+    background-size: cover;
+    height: 85vh;
+    width: 100vw; }
+    .jumbotron .jumbotron-header-container {
+      display: inline-block;
+      margin-top: 15%; }
+    .jumbotron .jumbotron-button {
+      width: 230px; }
+  .content .content-column-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center; }
+    .content .content-column-container .content-column {
+      width: 90%;
+      margin-top: 20%;
+      margin-bottom: 5%;
+      text-align: center; }
+      .content .content-column-container .content-column .column-paragraph {
+        margin-top: 10%; }
+  #footer {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    #footer .footer-content {
+      position: static; } }
+
+#nav {
+  background-color: #ECECEE;
+  font-weight: 300;
+  padding: 2%; }
+  #nav .nav {
+    display: inline; }
+    #nav .nav .navbar-link {
+      display: inline;
+      margin-left: 5%; }
+      #nav .nav .navbar-link .navbar-label {
+        text-decoration: none;
+        color: #1E1E20;
+        font-size: 1.1em;
+        transition: 0.4s; }
+      #nav .nav .navbar-link .navbar-label:hover {
+        color: #DC3522; }
+    #nav .nav .navbar-active .navbar-label {
+      color: #D9CB9E;
+      font-weight: 400; }
+
+.blog-container {
+  padding-top: 3%;
+  background-color: #ECECEE;
+  min-height: 95vh; }
+  .blog-container .blog-posts {
+    height: 90%; }
+    .blog-container .blog-posts .blog-count {
+      padding-bottom: 5%; }
+    .blog-container .blog-posts .blog-posts-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0 3% 0 3%; }
+      .blog-container .blog-posts .blog-posts-container .blog-post {
+        width: 48%;
+        margin-top: 5%; }
+        .blog-container .blog-posts .blog-posts-container .blog-post .blog-img {
+          width: 100%; }
+        .blog-container .blog-posts .blog-posts-container .blog-post .blog-title {
+          margin: 3% 0 3% 0;
+          font-size: 1.5em; }
+          .blog-container .blog-posts .blog-posts-container .blog-post .blog-title .blog-title-link {
+            text-decoration: none;
+            color: #1E1E20; }
+          .blog-container .blog-posts .blog-posts-container .blog-post .blog-title .blog-title-link:hover {
+            color: #DC3522; }
+        .blog-container .blog-posts .blog-posts-container .blog-post p {
+          margin: 1% 0 3% 0;
+          font-size: 1.1em; }
+        .blog-container .blog-posts .blog-posts-container .blog-post .read-more {
+          margin: 0;
+          font-size: 1em; }
+          .blog-container .blog-posts .blog-posts-container .blog-post .read-more a {
+            text-decoration: none;
+            color: #DC3522; }
+  .blog-container .blog-categories {
+    height: 10%;
+    padding: 3%; }
+    .blog-container .blog-categories .list-group {
+      margin-top: 1%; }
+      .blog-container .blog-categories .list-group a {
+        color: #D9CB9E;
+        text-decoration: none; }
+  .blog-container .blog-pagination {
+    float: right;
+    padding: 3%; }
+    .blog-container .blog-pagination ul {
+      list-style-type: none; }
+    .blog-container .blog-pagination a {
+      text-decoration: none;
+      color: #DC3522;
+      font-size: 1.1em; }
+
+.post-container {
+  background-color: #ECECEE;
+  min-height: 85vh; }
+  .post-container .post-back-container {
+    padding: 3%; }
+    .post-container .post-back-container .post-back {
+      text-decoration: none;
+      color: #DC3522;
+      font-size: 1.1em;
+      border: 1px solid #DC3522;
+      padding: 1%;
+      transition: 0.5s; }
+    .post-container .post-back-container .post-back:hover {
+      background-color: #DC3522;
+      color: #ECECEE; }
+  .post-container .post-title {
+    margin-top: 2%;
+    padding: 3%;
+    font-size: 1.5em; }
+  .post-container .post-image {
+    width: 100%; }
+  .post-container .post-content {
+    padding: 5% 12% 5% 15%; }

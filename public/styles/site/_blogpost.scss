@@ -1,0 +1,34 @@
+.post-container {
+  background-color: $colorWhite;
+  min-height: 85vh;
+	
+  .post-back-container {
+	padding: 3%;
+	
+	.post-back {
+	  text-decoration: none;
+	  color: $colorRed;
+	  font-size: 1.1em;
+	  border: 1px solid $colorRed;
+	  padding: 1%;
+	  transition: 0.5s;
+	}
+	.post-back:hover {
+	  background-color: $colorRed;
+	  color: $colorWhite;
+	}
+  }
+  
+  .post-title {
+	  margin-top: 2%;
+	  padding: 3%;
+	  font-size: 1.5em;
+  }
+  
+  .post-image {
+	  width: 100%;
+  }
+  .post-content {
+	padding: 5% 12% 5% 15%;
+  }
+  }
