@@ -3,10 +3,23 @@
 }
 
 #footer {
-	margin-top: 30px;
-	border-top: 1px solid #eeeeee;
-	padding-top: 30px;
-	color: #777777;
+	color: black;
+  	font-family: 'Lato', sans-serif;
+  	display: flex;
+  	flex-direction: row;
+  	justify-content: space-between;
+  	font-size: 1.1em;
+  	padding: 2%;
+  	
+  	#footer-right {
+	  float: right;
+	  
+	  .footer-link {
+		color: #E74C3C;
+	  }
+	  
+	}
+  
 }
 
 .gallery-image img{

@@ -1,0 +1,266 @@
+@font-face {
+  font-family: Lato; src: url('../fonts/Lato-Regular.woff2')
+}
+
+@font-face {
+  font-family: Lato; font-weight:300; src: url('../fonts/Lato-Light.woff2')
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+$colorDark: #1E1E20;
+$colorWhite: #ECECEE;
+$colorRed: #DC3522;
+$colorGold: #D9CB9E;
+
+body {
+  background-color: $colorDark;
+  min-height: 100%;
+  position: relative;
+}
+
+.container {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  }
+
+.jumbotron {
+  position: relative;
+  width: 100%;
+  //height: 100vh;
+  height: 60vmax;
+  background-image: url("/images/typewriter-background.jpg");
+  background-size: cover;
+  
+  .jumbotron-header-container {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	float: right;
+	margin: auto 20%;
+	
+	.jumbotron-header {
+	  font-weight: 500;
+	  font-size: 2em;
+	  color: $colorDark;
+	  text-shadow: 0 1px 2px #000000;
+	  text-align: center;
+	}
+  }
+  
+  .jumbotron-button {
+	border: none;
+	border-radius: 100px;
+	color: $colorWhite;
+	padding: 8px;
+	background-color: $colorRed;
+	font-size: 1em;
+	position: absolute;
+	bottom: 5%;
+	text-align: center;
+	width: 280px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+  }
+  
+  .facebook-profile {
+	position: absolute;
+	width: 30px;
+	top: 20px;
+	right: 20px;
+  }
+}
+
+.content {
+  .heading-container {
+	text-align: center;
+	
+	.content-heading {
+	  display: inline-block;
+	  color: $colorWhite;
+	  font-size: 2em;
+	  font-weight: 300;
+	  margin-top: 10%;
+	  border-bottom: 2px solid $colorRed;
+	  padding-bottom: 1%;
+	}
+  }
+  
+  .content-column-container {
+	margin-top: 10%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 9%;
+	
+	.content-column {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  text-align: justify;
+	  width: 25%;
+	  
+	  .column-header {
+		display: inline-block;
+		font-size: 1.7em;
+		font-weight: 300;
+		border-bottom: 2px solid $colorGold;
+		color: $colorWhite;
+		padding-bottom: 5%;
+		margin-bottom: 10%;
+	  }
+	  
+	  .column-paragraph {
+		font-weight: 300;
+		color: $colorWhite;
+		margin-top: 5%;
+	  }
+	  
+	}
+  }
+  
+}
+
+#footer {
+
+  .footer-content {
+	position: absolute;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	color: $colorWhite;
+	font-size: 0.95em;
+
+
+	.footer-link {
+	  text-decoration: none;
+	  color: $colorGold;
+	  letter-spacing: 3px;
+	  transition: 0.4s;
+	}
+
+	.footer-link:hover {
+	  color: $colorRed;
+	}
+  }
+  
+  #footer-left {
+	left: 2%;
+  }
+
+  #footer-right {
+	float: right;
+	right: 2%;
+  }
+}
+
+//form
+
+#mc_embed_signup {
+  width: 100%;
+
+  .validate {
+	font-family: 'Lato', sans-serif;
+	background-color: $colorDark;
+	color: $colorWhite;
+	
+	.required {
+	  margin: 5%;
+	  border-radius: 0;
+	  border: 2px solid $colorWhite;
+	  background-color: $colorDark;
+	  color: $colorWhite;
+	  font-size: 0.9em;
+	  transition: 0.4s;
+	}
+	
+	.required:focus {
+	  border: 2px solid $colorRed;
+	  outline: none;
+	}
+	
+	.column-form-label {
+	  font-size: 0.8em;
+	}
+	
+	.clear {
+	  text-align: center;
+	  
+	  .button {
+		border-radius: 100px;
+		background-color: $colorRed;
+		color: $colorWhite;
+		-webkit-appearance: none;
+	  }
+	}
+  }
+
+}
+
+
+@media only screen and (max-width: 769px) {
+  	html, body {
+	  max-width: 100vw;
+	}
+  
+	.jumbotron {
+	  background-image: url("/images/typewriter-mobile.jpg");
+	  background-size: cover;
+	  height: 85vh;
+	  width: 100vw;
+	  
+	  .jumbotron-header-container {
+		display: inline-block;
+		margin-top: 15%;
+	  }
+	  
+	  .jumbotron-button {
+		width: 230px;
+	  }
+	}
+  
+  .content {
+	.content-column-container {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-content: center;
+	  align-items: center;
+	  
+	  .content-column {
+		width: 90%;
+		margin-top: 20%;
+		margin-bottom: 5%;
+		text-align: center;
+		
+		.column-paragraph {
+		  margin-top: 10%;
+		}
+	  }
+	}
+  }
+  
+  #footer {
+	margin-top: 20%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	
+	.footer-content{
+	  position: static;
+	}
+  }
+}
+
+@import './site/nav';
+@import './site/blog';
+@import './site/blogpost';

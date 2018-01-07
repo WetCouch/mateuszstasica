@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Mateusz Stasica</title>
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-	<link href="/styles/index.css" rel="stylesheet">
+	<link href="/styles/site.css" rel="stylesheet">
 
 	{{!-- This file provides the default styling for the KeystoneJS Content Editor
         - only renders when user is logged in and admin--}}
@@ -21,26 +21,26 @@
 
 </head>
 <body>
-<div id="header">
-	<div class="container">
-		<nav id="nav">
-			<ul class="nav navbar-nav navbar-left">
-				{{# each navLinks}}
-					<li class="navbar-link
-						{{#ifeq ../section key}} navbar-active"{{else}}"{{/ifeq}}>
-						<a class="navbar-label" href="{{ href }}">{{ label }}</a>
-					</li>
-				{{/each}}
-			</ul>
-		</nav>
-	</div>
-</div>
+<!--<div id="header">-->
+	<!--<div class="container">-->
+		<!--<nav id="nav" {{#ifeq section 'blog' }} class="nav-blog-bg" {{else}}{{/ifeq}} >-->
+			<!--<ul class="nav navbar-nav navbar-left">-->
+				<!--{{# each navLinks}}-->
+					<!--<li class="navbar-link-->
+						<!--{{#ifeq ../section key}} navbar-active "{{else}}"{{/ifeq}}>-->
+						<!--<a class="navbar-label" href="{{ href }}">{{ label }}</a>-->
+					<!--</li>-->
+				<!--{{/each}}-->
+			<!--</ul>-->
+		<!--</nav>-->
+	<!--</div>-->
+<!--</div>-->
 <div id="body">
 	{{{body}}}
 </div>
 <div class="container">
 	<div id="footer">
-		<p class="footer-content" id="footer-left">ⓒ 2017 Mateusz Stasica</p>
+		<p class="footer-content" id="footer-left">ⓒ 2018 Mateusz Stasica</p>
 		<p class="footer-content" id="footer-right">Made with &lt;3 by <a class="footer-link" href="https://github.com/WetCouch">Wojciech Janoszek</a></p>
 	</div>
 </div>
