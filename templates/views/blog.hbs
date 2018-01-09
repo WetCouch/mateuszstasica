@@ -1,33 +1,52 @@
-<div class="container blog-container">
+<div id="blog-jumbotron">
+	<nav class="blog-nav-container">
+		<ul class="blog-nav">
+			<a href="/"><li class="blog-nav-link">o mnie</li></a>
+			<a href="/blog"><li class="blog-nav-link nav-selected">blog</li></a>
+			<a href="/wydarzenia"><li class="blog-nav-link">wydarzenia</li></a>
+			<a href="/kontakt"><li class="blog-nav-link">kontakt</li></a>
+		</ul>
+	</nav>
+	<p class="blog-intro">
+		Nauka języków w nowy i przyjemny sposób. Porady, informacje, ciekawostki, tricki. Znajdziecie tu wszystko co tylko jest potrzebne do skutecznego poznania kolejnego języka.
+	</p>
+</div>
+
+<div id="blog-list" class="container blog-container">
 	<div class="row">
 		<div class="blog-posts">
 			<!--<h4 class="blog-count">Showing {{ data.posts.results.length}} post.</h4>-->
 			<div class="blog-posts-container">
 				{{# each data.posts.results}}
-				<div data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}" class="blog-post">
+				<a class="blog-post" href="{{postUrl slug}}"><div data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}" >
 					<!--<p class="lead text-muted">{{{categoryList categories prefix="Posted in "}}}-->
 							<!--{{#if author.name.first}}by {{author.name.first}}{{/if}}-->
 					<!--</p>-->
-					{{#if image}}<a href="{{postUrl slug}}"><img src="{{{cloudinaryUrl image width=1280 height=720 crop='fill' quality="55" }}}" class="blog-img"></a>{{/if}}
-					<h2 class="blog-title" ><a class="blog-title-link" href="{{postUrl slug}}">{{{title}}}</a></h2>
-					<p class="blog-desc">{{{content.brief}}}</p>
-					{{#if content.extended}}<p class="read-more"><a href="{{postUrl slug}}">Read more...</a></p>{{/if}}
+					<h2 class="blog-title" >{{{title}}}</h2>
+					<hr>
+					<div class="blog-desc-container"><p class="blog-desc">{{{content.brief}}}</p></div>
+					{{#if image}}<img src="{{{cloudinaryUrl image width=1280 height=1280 crop='fill' quality="55" }}}" class="blog-img">{{/if}}
+					<!--{{#if image}}<div class="blog-img" style='background-image: url("{{{cloudinaryUrl image width=1280 height=720 crop='fill' quality="55" }}}")'></div>{{/if}}-->
+					<!--{{#if content.extended}}<p class="read-more"><a href="{{postUrl slug}}">Read more...</a></p>{{/if}}-->
+				</div></a>
+				{{/each}}
+			</div>
+		</div>
+		<div class="blog-links">
+			<div class="blog-categories">
+				<h3 class="blog-categories-title">KATEGORIE:</h3>
+				<div class="list-group">
+					<a href="/blog" class="active list-group-item">All Categories</a>
+					{{# each data.categories }}
+					<a href="{{categoryUrl key}}" class="false list-group-item">{{name}}</a>
+					{{/each}}
 				</div>
-				{{/each}}
 			</div>
-		</div>
-		<div class="blog-categories">
-			<h2>Categories</h2>
-			<div class="list-group">
-				<a href="/blog" class="active list-group-item">All Categories</a>
-				{{# each data.categories }}
-				<a href="{{categoryUrl key}}" class="false list-group-item">{{name}}</a>
-				{{/each}}
+			<div class="blog-pagination">
+				<h3 class="blog-categories-title">STRONY:</h3>
+				{{>pagination}}
 			</div>
 		</div>
 	</div>
-	<div class="blog-pagination">
-		{{>pagination}}
-	</div>
+
 </div>
-no
