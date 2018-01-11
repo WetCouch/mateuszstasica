@@ -1,37 +1,65 @@
 .post-container {
-  background-color: $colorWhite;
-  min-height: 85vh;
-  font-size: 1.2em;
-  letter-spacing: 2px;
-  font-family: 'Lato-Light', sans-serif;
+  font-family: 'Lato', sans-serif;
   
-  .post-back-container {
-	padding: 3%;
+  .post-article {
+	
+	.post-image {
+	  width: 100%;
+	}
 	
 	.post-back {
+	  margin-top: 1%;
 	  text-decoration: none;
-	  color: $colorRed;
-	  font-size: 1.1em;
-	  border: 1px solid $colorRed;
-	  padding: 1%;
-	  transition: 0.5s;
+	  padding: 2%;
+	  color: #E74C3C;
+	  font-size: 1.25em;
+	  display: block;
 	}
-	.post-back:hover {
-	  background-color: $colorRed;
-	  color: $colorWhite;
+	
+	.post-header {
+	  margin-top: 5%;
+	  text-align: center;
+	  
+	  .post-title {
+		font-size: 3.5em;
+		font-weight: 300;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		line-height: 120%;
+	  }
+	  
+	  hr {
+		margin-top: 2%;
+		width: 35%;
+		border: 2px solid #2A80B9;
+	  }
+	  
+	  .post-desc {
+		margin-top: 2%;
+		font-weight: 300;
+		font-size: 1.9em;
+		letter-spacing: 3px;
+	  }
+	  
+	  .post-date {
+		color: #929292;
+		font-weight: 300;
+		margin-top: 2%;
+		letter-spacing: 3px;
+		font-size: 1.1em;
+	  }
+	  
 	}
+	
+	.post {
+	  padding: 10% 17%;
+	  text-align: justify;
+	  font-size: 1.25em;
+	  letter-spacing: 2px;
+	  line-height: 130%;
+	  font-weight: 400;
+	}
+	
   }
   
-  .post-title {
-	  margin-top: 2%;
-	  padding: 3%;
-	  font-size: 1.5em;
-  }
-  
-  .post-image {
-	  width: 100%;
-  }
-  .post-content {
-	padding: 5% 12% 5% 15%;
-  }
-  }
+}

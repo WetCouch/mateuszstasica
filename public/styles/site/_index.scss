@@ -11,6 +11,7 @@
 	  position: absolute;
 	  bottom: 0;
 	  left: -50px;
+	  z-index: 0;
 	}
 	
 	.header {
@@ -22,6 +23,8 @@
 	  margin-top: 5%;
 	  margin-right: 5%;
 	  line-height: 80%;
+	  position: relative;
+	  z-index: 1;
 	  
 	  
 	  .wider {
@@ -314,4 +317,31 @@
 }
 
 
+@media only screen and (max-width: 800px) {
+  
+  #intro {
+	display: flex;
+	flex-direction: column;
+	
+	.jumbotron {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  height: 100%;
+	  
+	  .header {
+		margin: 5% 0;
+		font-size: 5rem;
+	  }
+	  
+	  .img-portrait {
+		position: relative;
+		left: 0;
+		bottom: -5%;
+	  }
+	  
+	}
+  }
+  
+}
 

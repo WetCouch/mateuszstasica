@@ -1,18 +1,18 @@
 <div class="container post-container">
 	<div class="row">
 			<article class="post-article">
-				<p class="post-back-container"><a class="post-back" href="/blog">&larr; back to the blog</a></p>
-				<header>
+				{{#if data.post.image}}<img src="{{{cloudinaryUrl data.post.image width=1920 height=1080 quality='80' crop='fit' }}}" class=" post-image img-responsive">{{/if}}
+				<a href="/blog" class="post-back">WRÓĆ</a>
+				<header class="post-header">
 					<h1 class="post-title">{{data.post.title}}</h1>
-					<h5>
-						{{{categoryList data.post.categories prefix="Posted in "}}}
-						{{#if author.name.first}}by {{author.name.first}}{{/if}}
+					<hr>
+					<div class="post-desc">{{{data.post.content.brief}}}</div>
+					<h5 class="post-date">
+						{{#if data.post._.publishedDate}}{{date data.post._.publishedDate format='Do MMMM YYYY'}}{{/if}}
 					</h5>
 				</header>
 				<div class="post">
-					{{#if data.post.image}}<img src="{{{cloudinaryUrl data.post.image width=1920 height=1080 quality='80' crop='fit' }}}" class=" post-image img-responsive">{{/if}}
-					<div class="post-content">{{{data.post.content.extended}}}
-					</div>
+					{{{data.post.content.extended}}}
 				</div>
 			</article>
 	</div>

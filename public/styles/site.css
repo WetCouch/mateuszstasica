@@ -75,7 +75,8 @@ table {
       height: 80%;
       position: absolute;
       bottom: 0;
-      left: -50px; }
+      left: -50px;
+      z-index: 0; }
     #intro .jumbotron .header {
       font-family: 'Carrinady', sans-serif;
       color: #AEAEAE;
@@ -84,7 +85,9 @@ table {
       letter-spacing: 10px;
       margin-top: 5%;
       margin-right: 5%;
-      line-height: 80%; }
+      line-height: 80%;
+      position: relative;
+      z-index: 1; }
       #intro .jumbotron .header .wider {
         font-size: 1.1em; }
     #intro .jumbotron .desc {
@@ -279,12 +282,29 @@ table {
         background-color: black;
         border: 2px solid #2A80B9; }
 
+@media only screen and (max-width: 800px) {
+  #intro {
+    display: flex;
+    flex-direction: column; }
+    #intro .jumbotron {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%; }
+      #intro .jumbotron .header {
+        margin: 5% 0;
+        font-size: 5rem; }
+      #intro .jumbotron .img-portrait {
+        position: relative;
+        left: 0;
+        bottom: -5%; } }
+
 #blog-jumbotron {
   font-family: 'Lato', sans-serif;
   height: 100vh; }
   #blog-jumbotron .blog-nav-container {
     height: 85%;
-    background-image: url("../images/typewriter.jpg");
+    background-image: url("../images/jay-wennington-2250.jpg");
     background-repeat: no-repeat;
     background-size: cover; }
     #blog-jumbotron .blog-nav-container .blog-nav {
@@ -375,3 +395,46 @@ table {
       padding: 5%; }
     #blog-list .blog-links .blog-pagination {
       padding: 5%; }
+
+.post-container {
+  font-family: 'Lato', sans-serif; }
+  .post-container .post-article .post-image {
+    width: 100%; }
+  .post-container .post-article .post-back {
+    margin-top: 1%;
+    text-decoration: none;
+    padding: 2%;
+    color: #E74C3C;
+    font-size: 1.25em;
+    display: block; }
+  .post-container .post-article .post-header {
+    margin-top: 5%;
+    text-align: center; }
+    .post-container .post-article .post-header .post-title {
+      font-size: 3.5em;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      line-height: 120%; }
+    .post-container .post-article .post-header hr {
+      margin-top: 2%;
+      width: 35%;
+      border: 2px solid #2A80B9; }
+    .post-container .post-article .post-header .post-desc {
+      margin-top: 2%;
+      font-weight: 300;
+      font-size: 1.9em;
+      letter-spacing: 3px; }
+    .post-container .post-article .post-header .post-date {
+      color: #929292;
+      font-weight: 300;
+      margin-top: 2%;
+      letter-spacing: 3px;
+      font-size: 1.1em; }
+  .post-container .post-article .post {
+    padding: 10% 17%;
+    text-align: justify;
+    font-size: 1.25em;
+    letter-spacing: 2px;
+    line-height: 130%;
+    font-weight: 400; }
