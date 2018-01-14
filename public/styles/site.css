@@ -314,7 +314,7 @@ table {
       #intro .jumbotron .header {
         float: none;
         margin: 5% 0;
-        font-size: 5rem;
+        font-size: 4em;
         text-align: center; }
       #intro .jumbotron .img-portrait {
         position: relative;
@@ -322,7 +322,8 @@ table {
         width: 100%;
         height: auto; }
       #intro .jumbotron .desc {
-        bottom: 1%; }
+        bottom: 1%;
+        font-size: 2em; }
     #intro .intro-text {
       display: flex;
       flex-direction: column-reverse; }
