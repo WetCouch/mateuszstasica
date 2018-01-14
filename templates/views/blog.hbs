@@ -22,8 +22,8 @@
 					<!--<p class="lead text-muted">{{{categoryList categories prefix="Posted in "}}}-->
 							<!--{{#if author.name.first}}by {{author.name.first}}{{/if}}-->
 					<!--</p>-->
-					<h2 class="blog-title" >{{{title}}}</h2>
-					<hr>
+					<div class="blog-title-container"><h2 class="blog-title" >{{{title}}}</h2></div>
+					<!--<hr>-->
 					<div class="blog-desc-container"><p class="blog-desc">{{{content.brief}}}</p></div>
 					{{#if image}}<img src="{{{cloudinaryUrl image width=1280 height=1280 crop='fill' quality="55" }}}" class="blog-img">{{/if}}
 					<!--{{#if image}}<div class="blog-img" style='background-image: url("{{{cloudinaryUrl image width=1280 height=720 crop='fill' quality="55" }}}")'></div>{{/if}}-->

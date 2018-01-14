@@ -63,3 +63,52 @@
   }
   
 }
+
+
+
+@media only screen and (max-width: 800px) {
+  
+  .post-container {
+	
+	.post-article {
+	  
+	  .post-back {
+		font-size: 1em;
+	  }
+	  
+	  .post-header {
+		margin-top: 10%;
+		height: 50vh;
+		
+		.post-title {
+		  font-size: 3em;
+		}
+		
+		hr {
+		  margin-top: 5%;
+		  border: 1.5px solid #2A80B9;
+		}
+		
+		.post-desc {
+		  margin-top: 5%;
+		}
+		
+		.post-date {
+		  margin-top: 5%;
+		}
+		
+	  }
+	  
+	  .post {
+		padding: 10% 10%;
+		letter-spacing: 1px;
+		p {
+		  margin-top: 10%;
+		}
+	  }
+	  
+	}
+	
+  }
+  
+}

@@ -16,6 +16,8 @@
 	  
 	  .footer-link {
 		color: #E74C3C;
+		text-decoration: none;
+		letter-spacing: 2px;
 	  }
 	  
 	}
@@ -26,4 +28,18 @@
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+
+@media only screen and (max-width: 800px) {
+  #footer {
+	padding-top: 7%;
+	flex-direction: column;
+	text-align: center;
+	
+	#footer-right {
+	  margin-top: 5%;
+	}
+	
+  }
 }
