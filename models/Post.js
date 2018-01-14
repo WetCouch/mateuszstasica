@@ -21,11 +21,19 @@ Post.add({
 		brief: { type: Types.Html, wysiwyg: true, height: 150 },
 		extended: { type: Types.Html, wysiwyg: true, height: 400 },
 	},
+	meta: {
+		title: { type: String},
+		description: { type: String}
+	},
 	categories: { type: Types.Relationship, ref: 'PostCategory', many: true },
 });
 
 Post.schema.virtual('content.full').get(function () {
 	return this.content.extended || this.content.brief;
+});
+
+Post.schema.virtual('fullPostUrl').get(function() {
+	return keystone.get('baseUrl') + 'blog/post/' + this.slug;
 });
 
 Post.defaultColumns = 'title, state|20%, author|20%, publishedDate|20%';

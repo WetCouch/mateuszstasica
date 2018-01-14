@@ -214,6 +214,12 @@ table {
         text-align: justify;
         margin: 3% 0 3% 0;
         font-size: 0.95em; }
+        #description-2 .desc-section .section-sidetext .sidetext-paragraph .paragraph-link {
+          color: #2A80B9;
+          letter-spacing: 2px;
+          font-size: 1em;
+          text-decoration: none;
+          font-weight: 600; }
     #description-2 .desc-section .section-title {
       width: 50%;
       display: flex;
@@ -243,7 +249,9 @@ table {
     font-weight: 600;
     letter-spacing: 5px;
     width: 30%;
-    padding: 1.5%; }
+    padding: 1.5%;
+    text-decoration: none;
+    color: black; }
 
 #newsletter {
   font-family: 'Lato', sans-serif;
@@ -423,6 +431,9 @@ table {
       color: black;
       text-align: center;
       margin-top: 5%; }
+      @media only screen and (max-width: 1024px) {
+        #blog-list .blog-posts-container .blog-post {
+          width: 35%; } }
       #blog-list .blog-posts-container .blog-post .blog-title-container {
         background-color: black;
         border-bottom: 3px solid #E74C3C; }
@@ -548,6 +559,13 @@ table {
     letter-spacing: 2px;
     line-height: 130%;
     font-weight: 400; }
+  .post-container .post-article .social-links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10%; }
+    .post-container .post-article .social-links-container .social-link {
+      width: 4%; }
 
 @media only screen and (max-width: 800px) {
   .post-container .post-article .post-back {

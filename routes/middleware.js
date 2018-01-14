@@ -21,9 +21,11 @@ exports.initLocals = function (req, res, next) {
 	res.locals.navLinks = [
 		{ label: 'Strona Główna', key: 'home', href: '/' },
 		{ label: 'Blog', key: 'blog', href: '/blog' },
-		{ label: 'Kontakt', key: 'contact', href: '/contact' }
+		{ label: 'Kontakt', key: 'contact', href: '/kontakt' },
+		{ label: 'Wydarzenia', key: 'events', href: '/wydarzenia' },
 	];
 	res.locals.user = req.user;
+	res.locals.baseUrl = req.app.get('baseUrl');
 	next();
 };
 

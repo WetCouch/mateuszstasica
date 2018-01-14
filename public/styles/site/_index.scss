@@ -195,6 +195,15 @@
 		text-align: justify;
 		margin: 3% 0 3% 0;
 		font-size: 0.95em;
+		
+		.paragraph-link {
+		  color: #2A80B9;
+		  letter-spacing: 2px;
+		  font-size: 1em;
+		  text-decoration: none;
+		  font-weight: 600;
+		}
+		
 	  }
 	  
 	}
@@ -239,6 +248,8 @@
 	letter-spacing: 5px;
 	width: 30%;
 	padding: 1.5%;
+	text-decoration: none;
+	color: black;
   }
   
 }

@@ -64,6 +64,9 @@
 	  text-align: center;
 	  margin-top: 5%;
 
+	  @media only screen and (max-width: 1024px) {
+	  width: 35%;
+	}
 	  
 	  .blog-title-container {
 		background-color: black;

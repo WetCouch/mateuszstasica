@@ -60,6 +60,17 @@
 	  font-weight: 400;
 	}
 	
+	.social-links-container {
+	  display: flex;
+	  flex-direction: row;
+	  justify-content: space-around;
+	  margin-bottom: 10%;
+	  
+	  .social-link {
+		width: 4%;
+	  }
+	}
+	
   }
   
 }
