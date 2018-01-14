@@ -1,3 +1,26 @@
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  src: url("../fonts/Lato-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 300;
+  src: url("../fonts/Lato-Light.ttf"); }
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 700;
+  src: url("../fonts/Lato-Bold.ttf"); }
+
+@font-face {
+  font-family: 'Capsuula';
+  src: url("../fonts/Capsuula.ttf"); }
+
+@font-face {
+  font-family: 'Carrinady';
+  src: url("../fonts/Carrinady.ttf"); }
+
 #header {
   margin-top: 30px; }
 
@@ -50,7 +73,8 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  font-weight: normal; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
