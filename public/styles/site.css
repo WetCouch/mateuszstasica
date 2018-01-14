@@ -460,8 +460,7 @@ table {
         #blog-list .blog-posts-container .blog-post {
           width: 35%; } }
       #blog-list .blog-posts-container .blog-post .blog-title-container {
-        background-color: black;
-        border-bottom: 3px solid #E74C3C; }
+        background-color: black; }
         #blog-list .blog-posts-container .blog-post .blog-title-container .blog-title {
           color: white;
           text-align: center;
