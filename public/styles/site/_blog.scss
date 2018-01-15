@@ -47,8 +47,13 @@
   margin-top: 5%;
   
   .blog-posts-container {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-flex-direction: row;
 	flex-direction: row;
+	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 
@@ -56,8 +61,13 @@
 	  width: 28%;
 	  box-shadow: 1px 1px 3px 1px rgba(135, 152, 151, 0.51);
 	  position: relative;
+	  display: -webkit-box;
+	  display: -webkit-flex;
+	  display: -ms-flexbox;
 	  display: flex;
+	  -webkit-flex-direction: column;
 	  flex-direction: column;
+	  -webkit-justify-content: space-between;
 	  justify-content: space-between;
 	  text-decoration: none;
 	  color: black;
@@ -122,8 +132,13 @@
   
   .blog-links {
 	margin-top: 10%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-flex-direction: row;
 	flex-direction: row;
+	-webkit-justify-content: space-between;
 	justify-content: space-between;
 	width: 100%;
 	text-transform: uppercase;
@@ -167,9 +182,19 @@
 	
 	.blog-nav-container {
 	  height: 50vh;
+	  @media (device-width: 320px) and (device-height: 480px) {
+		height: 240px;
+	  }
+	  @media (device-width: 320px) and (device-height: 568px) {
+		height: 284px;
+	  }
 
 	  .blog-nav {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-justify-content: space-evenly;
 		justify-content: space-evenly;
 		float: none;
 		margin: 0 auto;
@@ -196,7 +221,9 @@
 	margin-top: 15%;
 
 	.blog-posts-container {
+	  -webkit-flex-direction: column;
 	  flex-direction: column;
+	  -webkit-align-items: center;
 	  align-items: center;
 	  
 	  .blog-post {
@@ -207,7 +234,9 @@
 	}
 	
 	.blog-links {
+	  -webkit-flex-direction: column-reverse;
 	  flex-direction: column-reverse;
+	  -webkit-align-items: center;
 	  align-items: center;
 	}
 

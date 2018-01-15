@@ -78,8 +78,13 @@
 	}
 	
 	.social-links-container {
+	  display: -webkit-box;
+	  display: -webkit-flex;
+	  display: -ms-flexbox;
 	  display: flex;
+	  -webkit-flex-direction: row;
 	  flex-direction: row;
+	  -webkit-justify-content: space-around;
 	  justify-content: space-around;
 	  margin-bottom: 10%;
 	  
@@ -102,6 +107,8 @@
 	  
 	  .post-back {
 		font-size: 1em;
+		text-align: center;
+		margin-top: 2%;
 	  }
 	  
 	  .post-header {
@@ -113,22 +120,23 @@
 		}
 		
 		hr {
-		  margin-top: 5%;
+		  margin-top: 10%;
 		  border: 1.5px solid #2A80B9;
 		}
 		
 		.post-desc {
-		  margin-top: 5%;
+		  margin-top: 10%;
 		}
 		
 		.post-date {
-		  margin-top: 5%;
+		  margin-top: 10%;
 		}
 		
 	  }
 	  
 	  .post {
-		padding: 10% 10%;
+		margin-top: 10%;
+		padding: 15% 10%;
 		letter-spacing: 1px;
 		p {
 		  margin-top: 10%;

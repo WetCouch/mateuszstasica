@@ -71,8 +71,12 @@
 	
 	#intro-left{
 	  #why-container {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
 		justify-content: center;
+		-webkit-justify-content: center;
 		margin-top: 20%;
 		#intro-why {
 		  text-align: center;
@@ -96,15 +100,26 @@
 	  bottom: 5%;
 	  right: 3%;
 	  font-weight: 300;
+	  display: -webkit-box;
+	  display: -webkit-flex;
+	  display: -ms-flexbox;
 	  display: flex;
+	  -webkit-flex-direction: row;
+	  flex-direction: row;
+	  -webkit-align-content: center;
 	  align-content: center;
 	  
 	  .links-container {
 		margin: auto 0;
 		width: 100%;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-flex-direction: row;
 		flex-direction: row;
-		justify-content: space-evenly;
+		-webkit-justify-content: space-around;
+		justify-content: space-around;
 
 		.links {
 		  display: inline-block;
@@ -129,6 +144,7 @@
   
   .desc-sidepic {
 	height: 100%;
+	width: 100%;
   }
   
   .desc-sidetext {
@@ -138,9 +154,15 @@
 	right: 0;
 	top: 0;
 	background-color: white;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-flex-direction: column;
 	flex-direction: column;
+	-webkit-justify-content: center;
 	justify-content: center;
+	-webkit-align-items: center;
 	align-items: center;
 	
 	hr {
@@ -170,21 +192,36 @@
 #description-2 {
   margin-top: 10%;
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
   flex-direction: column;
+  -webkit-align-items: center;
   align-items: center;
   
   .desc-section {
 	margin-bottom: 10%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-flex-direction: row;
 	flex-direction: row;
 	
 	.section-sidetext {
 	  width: 50%;
 	  background-color: white;
+	  display: -webkit-box;
+	  display: -webkit-flex;
+	  display: -ms-flexbox;
 	  display: flex;
+	  -webkit-flex-direction: column;
 	  flex-direction: column;
+	  -webkit-justify-content: center;
 	  justify-content: center;
+	  -webkit-align-items: center;
 	  align-items: center;
 	  
 	  .sidetext-paragraph {
@@ -210,16 +247,26 @@
 	
 	.section-title {
 	  width: 50%;
+	  display: -webkit-box;
+	  display: -webkit-flex;
+	  display: -ms-flexbox;
 	  display: flex;
+	  -webkit-justify-content: center;
 	  justify-content: center;
+	  -webkit-align-items: center;
 	  align-items: center;
 	  
 	  .section-header-container {
 		width: 25vw;
 		height: 25vw;
 		background-color: black;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-justify-content: center;
 		justify-content: center;
+		-webkit-align-items: center;
 		align-items: center;
 		
 		.section-header {
@@ -266,8 +313,13 @@
 	background-color: black;
 	width: 75%;
 	margin: 0 auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-flex-direction: row;
 	flex-direction: row;
+	-webkit-justify-content: space-around;
 	justify-content: space-evenly;
 	padding: 3%;
 	
@@ -277,7 +329,11 @@
 	  margin: auto 0;
 	  
 	  .newsletter-header-container {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-align-items: center;
 		align-items: center;
 		
 		hr {
@@ -340,17 +396,32 @@
 
 
 @media only screen and (max-width: 800px) {
-  
+
   #intro {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-flex-direction: column;
 	flex-direction: column;
 	height: auto;
 	
 	.jumbotron {
+	  display: -webkit-box;
+	  display: -webkit-flex;
+	  display: -ms-flexbox;
 	  display: flex;
+	  -webkit-flex-direction: column;
 	  flex-direction: column;
+	  -webkit-align-items: center;
 	  align-items: center;
 	  height: 100vh;
+	  @media (min-width: 320px) and (max-width: 480px) {
+		height: 480px;
+	  }
+	  @media (min-width: 320px) and (max-width: 568px) {
+		height: 568px;
+	  }
 	  margin-bottom: 0;
 	  
 	  .header {
@@ -375,7 +446,11 @@
 	}
 	
 	.intro-text {
+	  display: -webkit-box;
+	  display: -webkit-flex;
+	  display: -ms-flexbox;
 	  display: flex;
+	  -webkit-flex-direction: column-reverse;
 	  flex-direction: column-reverse;
 	  
 	  .intro {
@@ -385,10 +460,21 @@
 	  #nav {
 		position: static;
 		width: 100%;
-		padding: 10% 0;
+		padding: 5% 0;
 		.links-container {
+		  display: -webkit-box;
+		  display: -webkit-flex;
+		  display: -ms-flexbox;
+		  display: flex;
+		  -webkit-flex-direction: column;
+		  flex-direction: column;
+		  -webkit-justify-content: space-between;
+		  justify-content: space-between;
+		  -webkit-align-items: center;
+		  align-items: center;
 		  .links {
 			font-size: 1.1em;
+			margin-top: 5%;
 		  }
 		}
 	  }
@@ -400,8 +486,18 @@
   
   #description-1 {
 	height: auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-flex-direction: column;
 	flex-direction: column;
+	@media (min-width: 320px) and (max-width: 480px) {
+	  height: 480px;
+	}
+	@media (min-width: 320px) and (max-width: 568px) {
+	  height: 568px;
+	}
 	
 	.desc-sidepic {
 	  height: auto;
@@ -421,6 +517,7 @@
   #description-2 {
 	
 	.desc-section {
+	  -webkit-flex-direction: column;
 	  flex-direction: column;
 	  
 	  .section-sidetext {
@@ -442,6 +539,7 @@
 	}
 	
 	.desc-section-mobile-reversed {
+	  -webkit-flex-direction: column-reverse;
 	  flex-direction: column-reverse;
 	}
 	
@@ -459,9 +557,13 @@
 	margin-top: 15%;
 	
 	.newsletter-container {
+	  -webkit-flex-direction: column;
 	  flex-direction: column;
+	  -webkit-align-content: center;
 	  align-content: center;
+	  -webkit-justify-content: center;
 	  justify-content: center;
+	  -webkit-align-items: center;
 	  align-items: center;
 	  width: 85%;
 	  
@@ -470,6 +572,7 @@
 		width: 80%;
 		
 		.newsletter-header-container {
+		  -webkit-flex-direction: column;
 		  flex-direction: column;
 		  
 		  hr {
@@ -496,3 +599,16 @@
   
 }
 
+@media (max-height: 1024px) {
+  #intro {
+	height: auto;
+	.jumbotron {
+	  height: 100vh;
+	}
+  }
+  
+  #description-1 {
+	height: auto;
+	min-height: 100vh;
+  }
+}
