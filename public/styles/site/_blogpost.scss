@@ -52,12 +52,29 @@
 	}
 	
 	.post {
-	  padding: 10% 17%;
+	  padding: 10% 17% 5% 17%;
 	  text-align: justify;
 	  font-size: 1.25em;
 	  letter-spacing: 2px;
 	  line-height: 130%;
 	  font-weight: 400;
+	  strong {
+		font-weight: 700;
+	  }
+	  p {
+		margin-top: 2%;
+	  }
+	  ol {
+		list-style-type: disc;
+		margin-top: 3%;
+	  }
+	  ul {
+		list-style-type: decimal;
+		margin-top: 2%;
+	  }
+	  li {
+		margin-top: 1%;
+	  }
 	}
 	
 	.social-links-container {
@@ -115,6 +132,12 @@
 		letter-spacing: 1px;
 		p {
 		  margin-top: 10%;
+		}
+	  }
+	  
+	  .social-links-container {
+		.social-link {
+		  width: 10%;
 		}
 	  }
 	  
