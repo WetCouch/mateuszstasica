@@ -81,25 +81,6 @@
 	  
 	}
 	
-	#intro-left{
-	  #why-container {
-		display: -webkit-box;
-		display: -webkit-flex;
-		display: -ms-flexbox;
-		display: flex;
-		justify-content: center;
-		-webkit-justify-content: center;
-		margin-top: 20%;
-		#intro-why {
-		  text-align: center;
-		  padding-bottom: 2%;
-		  border-bottom: 3px solid #E74C3C;
-		  display: inline;
-		  font-size: 1.2em;
-		}
-	  }
-	}
-	
 	#intro-right {
 	  float: right;
 	}
@@ -145,8 +126,26 @@
   }
 }
 
+#desc-header-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  margin-top: 8%;
+  #desc-header {
+	text-align: center;
+	padding-bottom: 1%;
+	border-bottom: 3px solid #E74C3C;
+	display: inline;
+	font-size: 1.2em;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	letter-spacing: 2px;
 
-
+  }
+}
 
 
 #description-1 {
@@ -157,6 +156,8 @@
   .desc-sidepic {
 	height: 100%;
 	width: 100%;
+	background-image: url('../images/sidepic.jpg');
+	background-size: cover;
   }
   
   .desc-sidetext {
@@ -176,11 +177,15 @@
 	justify-content: center;
 	-webkit-align-items: center;
 	align-items: center;
+	.intro-bold {
+	  font-weight: 500;
+	  color: #2A80B9;
+	}
 	
 	hr {
 	  width: 20%;
 	  border: none;
-	  border-bottom: solid 2px #2A80B9;
+	  border-bottom: solid 2px #E74C3C;
 	}
 	
 	
@@ -198,7 +203,43 @@
 }
 
 
-
+#citation {
+  font-family: 'Lato', sans-serif;
+  margin-top: 10%;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  .citation-container {
+	width: 40%;
+	font-size: 1.5em;
+	color: #2A80B9;
+	line-height: 120%;
+	border-bottom: 1px solid #929292;
+	border-right: 1px solid #929292;
+	padding: 2%;
+	text-align: center;
+  }
+  .citation-sidetext {
+	width: 40%;
+	letter-spacing: 1px;
+	line-height: 150%;
+	font-size: 1.1em;
+	padding-left: 5%;
+	text-align: justify;
+	.intro-bold {
+	  font-weight: 500;
+	  color: #2A80B9;
+	}
+  }
+}
 
 
 #description-2 {
@@ -212,6 +253,13 @@
   flex-direction: column;
   -webkit-align-items: center;
   align-items: center;
+
+  .desc-link {
+	font-weight: 700;
+	color: #E74C3C;
+	text-decoration: none;
+	letter-spacing: 3px;
+  }
   
   .desc-section {
 	margin-bottom: 10%;
@@ -244,6 +292,14 @@
 		text-align: justify;
 		margin: 3% 0 3% 0;
 		font-size: 0.95em;
+
+		.sidetext-bold {
+		  font-weight: 700;
+		  color: #2A80B9;
+		  text-decoration: none;
+		  letter-spacing: 3px;
+		  font-size: 1.1em;
+		}
 		
 		.paragraph-link {
 		  color: #2A80B9;
@@ -254,7 +310,7 @@
 		}
 		
 	  }
-	  
+	  	  
 	}
 	
 	.section-title {

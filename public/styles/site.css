@@ -157,20 +157,6 @@ table {
       text-align: justify; }
       #intro .intro-text .intro p {
         margin-bottom: 10%; }
-    #intro .intro-text #intro-left #why-container {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      justify-content: center;
-      -webkit-justify-content: center;
-      margin-top: 20%; }
-      #intro .intro-text #intro-left #why-container #intro-why {
-        text-align: center;
-        padding-bottom: 2%;
-        border-bottom: 3px solid #E74C3C;
-        display: inline;
-        font-size: 1.2em; }
     #intro .intro-text #intro-right {
       float: right; }
     #intro .intro-text #nav {
@@ -207,13 +193,33 @@ table {
           letter-spacing: 3px;
           text-decoration: none; }
 
+#desc-header-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  margin-top: 8%; }
+  #desc-header-container #desc-header {
+    text-align: center;
+    padding-bottom: 1%;
+    border-bottom: 3px solid #E74C3C;
+    display: inline;
+    font-size: 1.2em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px; }
+
 #description-1 {
   margin-top: 10%;
   height: 100vh;
   position: relative; }
   #description-1 .desc-sidepic {
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    background-image: url("../images/sidepic.jpg");
+    background-size: cover; }
   #description-1 .desc-sidetext {
     width: 50%;
     height: 100%;
@@ -231,10 +237,13 @@ table {
     justify-content: center;
     -webkit-align-items: center;
     align-items: center; }
+    #description-1 .desc-sidetext .intro-bold {
+      font-weight: 500;
+      color: #2A80B9; }
     #description-1 .desc-sidetext hr {
       width: 20%;
       border: none;
-      border-bottom: solid 2px #2A80B9; }
+      border-bottom: solid 2px #E74C3C; }
     #description-1 .desc-sidetext .sidetext-paragraph {
       font-family: 'Lato', sans-serif;
       line-height: 180%;
@@ -242,6 +251,40 @@ table {
       width: 75%;
       text-align: justify;
       margin: 7% 0 7% 0; }
+
+#citation {
+  font-family: 'Lato', sans-serif;
+  margin-top: 10%;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center; }
+  #citation .citation-container {
+    width: 40%;
+    font-size: 1.5em;
+    color: #2A80B9;
+    line-height: 120%;
+    border-bottom: 1px solid #929292;
+    border-right: 1px solid #929292;
+    padding: 2%;
+    text-align: center; }
+  #citation .citation-sidetext {
+    width: 40%;
+    letter-spacing: 1px;
+    line-height: 150%;
+    font-size: 1.1em;
+    padding-left: 5%;
+    text-align: justify; }
+    #citation .citation-sidetext .intro-bold {
+      font-weight: 500;
+      color: #2A80B9; }
 
 #description-2 {
   margin-top: 10%;
@@ -254,6 +297,11 @@ table {
   flex-direction: column;
   -webkit-align-items: center;
   align-items: center; }
+  #description-2 .desc-link {
+    font-weight: 700;
+    color: #E74C3C;
+    text-decoration: none;
+    letter-spacing: 3px; }
   #description-2 .desc-section {
     margin-bottom: 10%;
     display: -webkit-box;
@@ -283,6 +331,12 @@ table {
         text-align: justify;
         margin: 3% 0 3% 0;
         font-size: 0.95em; }
+        #description-2 .desc-section .section-sidetext .sidetext-paragraph .sidetext-bold {
+          font-weight: 700;
+          color: #2A80B9;
+          text-decoration: none;
+          letter-spacing: 3px;
+          font-size: 1.1em; }
         #description-2 .desc-section .section-sidetext .sidetext-paragraph .paragraph-link {
           color: #2A80B9;
           letter-spacing: 2px;
