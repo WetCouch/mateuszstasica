@@ -134,10 +134,41 @@ table {
       position: absolute;
       bottom: 7%;
       width: 100%; }
+  #intro #nav {
+    font-family: 'Lato', sans-serif;
+    width: 55%;
+    height: 4%;
+    margin: 0 auto;
+    background-color: black;
+    font-weight: 300;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-content: center;
+    align-content: center; }
+    #intro #nav .links-container {
+      margin: auto 0;
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+      flex-direction: row;
+      -webkit-justify-content: space-around;
+      justify-content: space-around; }
+      #intro #nav .links-container .links {
+        display: inline-block;
+        color: white;
+        font-size: 1.2em;
+        letter-spacing: 3px;
+        text-decoration: none; }
   #intro .intro-text {
     height: 45%;
     background-color: white;
-    position: relative;
     font-family: 'Lato', sans-serif; }
     #intro .intro-text .intro-bold {
       font-weight: 500;
@@ -150,7 +181,7 @@ table {
     #intro .intro-text .intro {
       width: 32%;
       display: inline-block;
-      padding: 9%;
+      padding: 5% 9%;
       font-size: 1.2em;
       letter-spacing: 2px;
       line-height: 120%;
@@ -159,39 +190,6 @@ table {
         margin-bottom: 10%; }
     #intro .intro-text #intro-right {
       float: right; }
-    #intro .intro-text #nav {
-      width: 40%;
-      height: 12%;
-      background-color: black;
-      position: absolute;
-      bottom: 5%;
-      right: 3%;
-      font-weight: 300;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-direction: row;
-      flex-direction: row;
-      -webkit-align-content: center;
-      align-content: center; }
-      #intro .intro-text #nav .links-container {
-        margin: auto 0;
-        width: 100%;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-flex-direction: row;
-        flex-direction: row;
-        -webkit-justify-content: space-around;
-        justify-content: space-around; }
-        #intro .intro-text #nav .links-container .links {
-          display: inline-block;
-          color: white;
-          font-size: 1.2em;
-          letter-spacing: 3px;
-          text-decoration: none; }
 
 #desc-header-container {
   display: -webkit-box;
@@ -271,10 +269,18 @@ table {
     font-size: 1.5em;
     color: #2A80B9;
     line-height: 120%;
-    border-bottom: 1px solid #929292;
-    border-right: 1px solid #929292;
     padding: 2%;
     text-align: center; }
+    #citation .citation-container .citation-marks {
+      font-size: 2em;
+      color: #929292; }
+    #citation .citation-container .citation-marks-upper {
+      font-size: 2em;
+      color: #929292;
+      transform: rotateY(180deg) rotateZ(180deg);
+      position: relative;
+      bottom: 15px;
+      left: 5px; }
   #citation .citation-sidetext {
     width: 40%;
     letter-spacing: 1px;
@@ -483,6 +489,24 @@ table {
       #intro .jumbotron .desc {
         bottom: 1%;
         font-size: 2em; }
+    #intro #nav {
+      position: static;
+      width: 100%;
+      padding: 5% 0; }
+      #intro #nav .links-container {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        -webkit-align-items: center;
+        align-items: center; }
+        #intro #nav .links-container .links {
+          font-size: 1.1em;
+          margin-top: 5%; }
     #intro .intro-text {
       display: -webkit-box;
       display: -webkit-flex;
@@ -492,24 +516,6 @@ table {
       flex-direction: column-reverse; }
       #intro .intro-text .intro {
         width: 80%; }
-      #intro .intro-text #nav {
-        position: static;
-        width: 100%;
-        padding: 5% 0; }
-        #intro .intro-text #nav .links-container {
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-flex-direction: column;
-          flex-direction: column;
-          -webkit-justify-content: space-between;
-          justify-content: space-between;
-          -webkit-align-items: center;
-          align-items: center; }
-          #intro .intro-text #nav .links-container .links {
-            font-size: 1.1em;
-            margin-top: 5%; }
   #description-1 {
     height: auto;
     display: -webkit-box;
