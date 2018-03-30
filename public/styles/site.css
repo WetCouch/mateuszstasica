@@ -53,6 +53,8 @@
     padding-top: 7%;
     flex-direction: column;
     text-align: center; }
+    #footer #footer-left {
+      margin-bottom: 5%; }
     #footer #footer-right {
       margin-top: 5%; } }
 
@@ -176,10 +178,10 @@ table {
     font-family: 'Lato', sans-serif; }
     #intro .intro-text .intro-bold {
       font-weight: 500;
-      color: #2A80B9; }
+      color: #988e77; }
     #intro .intro-text .intro-link {
       font-weight: 700;
-      color: #E74C3C;
+      color: #246c9c;
       text-decoration: none;
       letter-spacing: 3px; }
     #intro .intro-text .intro {
@@ -224,7 +226,7 @@ table {
     #description-1 .desc-sidetext #desc-header {
       text-align: center;
       padding-bottom: 1%;
-      border-bottom: 3px solid #E74C3C;
+      border-bottom: 3px solid #246c9c;
       display: inline;
       font-size: 1.2em;
       font-family: 'Lato', sans-serif;
@@ -232,11 +234,11 @@ table {
       letter-spacing: 2px; }
     #description-1 .desc-sidetext .intro-bold {
       font-weight: 500;
-      color: #2A80B9; }
+      color: #988e77; }
     #description-1 .desc-sidetext hr {
       width: 20%;
       border: none;
-      border-bottom: solid 2px #E74C3C; }
+      border-bottom: solid 2px #246c9c; }
     #description-1 .desc-sidetext .sidetext-paragraph {
       font-family: 'Lato', sans-serif;
       line-height: 180%;
@@ -262,7 +264,7 @@ table {
   #citation .citation-container {
     width: 40%;
     font-size: 1.5em;
-    color: #2A80B9;
+    color: #246c9c;
     line-height: 120%;
     padding: 2%;
     text-align: center; }
@@ -287,7 +289,7 @@ table {
       margin-bottom: 4%; }
       #citation .citation-sidetext .citation-sidetext-pg .intro-bold {
         font-weight: 500;
-        color: #2A80B9; }
+        color: #988e77; }
 
 #description-2 {
   margin-top: 10%;
@@ -302,7 +304,7 @@ table {
   align-items: center; }
   #description-2 .desc-link {
     font-weight: 700;
-    color: #E74C3C;
+    color: #246c9c;
     text-decoration: none;
     letter-spacing: 3px; }
   #description-2 .desc-section {
@@ -336,12 +338,12 @@ table {
         font-size: 1.05em; }
         #description-2 .desc-section .section-sidetext .sidetext-paragraph .sidetext-bold {
           font-weight: 700;
-          color: #2A80B9;
+          color: #988e77;
           text-decoration: none;
           letter-spacing: 3px;
           font-size: 1.05em; }
         #description-2 .desc-section .section-sidetext .sidetext-paragraph .paragraph-link {
-          color: #2A80B9;
+          color: #246c9c;
           letter-spacing: 2px;
           font-size: 1em;
           text-decoration: none;
@@ -846,3 +848,34 @@ table {
       margin-top: 10%; }
   .post-container .post-article .social-links-container .social-link {
     width: 10%; } }
+
+@media (min-height: 1024px) and (min-width: 800px) {
+  #body .privacy-intro {
+    height: 55vh; }
+    #body .privacy-intro .privacy-jumbotron {
+      height: 100%; }
+    #body .privacy-intro .privacy-nav {
+      height: 7% !important; } }
+
+.privacy-header {
+  font-size: 3em;
+  font-family: 'Lato', sans-serif;
+  margin-top: 8%;
+  text-align: center;
+  width: 100%; }
+
+.privacy-container {
+  margin: 5% auto 3% auto;
+  width: 80%; }
+  .privacy-container .privacy-paragraph {
+    margin-top: 2%;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.05em;
+    letter-spacing: 1px;
+    line-height: 150%; }
+
+@media (max-width: 800px) {
+  .privacy-header {
+    margin-top: 10%; }
+  .privacy-paragraph {
+    padding-top: 10%; } }

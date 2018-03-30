@@ -1,0 +1,42 @@
+@media (min-height: 1024px) and (min-width: 800px) {
+  #body .privacy-intro {
+	height: 55vh;
+	.privacy-jumbotron {
+	  height: 100%;
+	}
+	.privacy-nav {
+	  height: 7% !important;
+	}
+  }
+}
+
+.privacy-header {
+  font-size: 3em;
+  font-family: 'Lato', sans-serif;
+  margin-top: 8%;
+  text-align: center;
+  width: 100%;
+}
+
+.privacy-container {
+  margin: 5% auto 3% auto;
+  width: 80%;
+  
+  .privacy-paragraph {
+	margin-top: 2%;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.05em;
+	letter-spacing: 1px;
+	line-height: 150%;
+  }
+  
+}
+
+@media (max-width: 800px) {
+  .privacy-header {
+	margin-top: 10%;
+  }
+  .privacy-paragraph {
+	padding-top: 10%;
+  }
+}

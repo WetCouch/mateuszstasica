@@ -23,6 +23,7 @@ exports.initLocals = function (req, res, next) {
 		{ label: 'Blog', key: 'blog', href: '/blog' },
 		{ label: 'Kontakt', key: 'contact', href: '/kontakt' },
 		{ label: 'Wydarzenia', key: 'events', href: '/wydarzenia' },
+		{ label: 'Polityka Prywatności', key: 'privacy', href: '/polityka-prywatnosci' },
 	];
 	res.locals.user = req.user;
 	res.locals.baseUrl = req.app.get('baseUrl');
