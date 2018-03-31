@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89073829-4b3f-4653-8b20-1d8cc78d8e51" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/public/styles/site.css" afterPath="$PROJECT_DIR$/public/styles/site.css" />
       <change beforePath="$PROJECT_DIR$/public/styles/site/_companies.scss" afterPath="$PROJECT_DIR$/public/styles/site/_companies.scss" />
-      <change beforePath="$PROJECT_DIR$/public/styles/site/_index.scss" afterPath="$PROJECT_DIR$/public/styles/site/_index.scss" />
       <change beforePath="$PROJECT_DIR$/templates/views/companies.hbs" afterPath="$PROJECT_DIR$/templates/views/companies.hbs" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,8 +50,8 @@
           <file leaf-file-name="companies.hbs" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/templates/views/companies.hbs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="967">
-                  <caret line="67" column="59" lean-forward="false" selection-start-line="67" selection-start-column="59" selection-end-line="67" selection-end-column="59" />
+                <state relative-caret-position="217">
+                  <caret line="52" column="17" lean-forward="false" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
                   <folding />
                 </state>
               </provider>
@@ -86,8 +84,8 @@
           <file leaf-file-name="_index.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/styles/site/_index.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="917">
-                  <caret line="309" column="10" lean-forward="false" selection-start-line="309" selection-start-column="10" selection-end-line="313" selection-end-column="27" />
+                <state relative-caret-position="548">
+                  <caret line="301" column="10" lean-forward="true" selection-start-line="301" selection-start-column="10" selection-end-line="305" selection-end-column="28" />
                   <folding />
                 </state>
               </provider>
@@ -96,8 +94,8 @@
           <file leaf-file-name="_companies.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/styles/site/_companies.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1202">
-                  <caret line="109" column="25" lean-forward="false" selection-start-line="109" selection-start-column="25" selection-end-line="109" selection-end-column="25" />
+                <state relative-caret-position="532">
+                  <caret line="117" column="19" lean-forward="false" selection-start-line="117" selection-start-column="19" selection-end-line="117" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -166,7 +164,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="1113" />
     <option name="y" value="23" />
     <option name="width" value="1453" />
@@ -349,15 +347,15 @@
       <workItem from="1521391188270" duration="467000" />
       <workItem from="1521553445252" duration="66000" />
       <workItem from="1521553917945" duration="530000" />
-      <workItem from="1522181904640" duration="20916000" />
+      <workItem from="1522181904640" duration="22210000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111758000" />
+    <option name="totallyTimeSpent" value="113052000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1113" y="23" width="1453" height="1417" extended-state="0" />
+    <frame x="1113" y="23" width="1453" height="1417" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17527933" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -559,10 +557,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
           <folding>
-            <marker date="1522530887478" expanded="true" signature="13269:14881" ph="{...}" />
-            <marker date="1522530887478" expanded="true" signature="14915:14984" ph="{...}" />
-            <marker date="1522530887478" expanded="true" signature="16896:16903" ph="{...}" />
-            <marker date="1522530887478" expanded="true" signature="18864:18900" ph="{...}" />
+            <marker date="1522532181442" expanded="true" signature="13269:14881" ph="{...}" />
+            <marker date="1522532181442" expanded="true" signature="14915:14984" ph="{...}" />
+            <marker date="1522532181442" expanded="true" signature="16896:16903" ph="{...}" />
+            <marker date="1522532181442" expanded="true" signature="18864:18900" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -767,24 +765,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/styles/site/_index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="917">
-          <caret line="309" column="10" lean-forward="false" selection-start-line="309" selection-start-column="10" selection-end-line="313" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/views/companies.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="967">
-          <caret line="67" column="59" lean-forward="false" selection-start-line="67" selection-start-column="59" selection-end-line="67" selection-end-column="59" />
+        <state relative-caret-position="0">
+          <caret line="0" column="8" lean-forward="true" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/styles/site/_companies.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1202">
-          <caret line="109" column="25" lean-forward="false" selection-start-line="109" selection-start-column="25" selection-end-line="109" selection-end-column="25" />
+        <state relative-caret-position="532">
+          <caret line="117" column="19" lean-forward="false" selection-start-line="117" selection-start-column="19" selection-end-line="117" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/views/companies.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="52" column="17" lean-forward="false" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
           <folding />
         </state>
       </provider>
