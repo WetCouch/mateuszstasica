@@ -171,7 +171,8 @@ table {
         color: white;
         font-size: 1.2em;
         letter-spacing: 3px;
-        text-decoration: none; }
+        text-decoration: none;
+        z-index: 1; }
   #intro .intro-text {
     height: 45%;
     background-color: white;
