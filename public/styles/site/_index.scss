@@ -545,8 +545,8 @@
 	  display: -webkit-flex;
 	  display: -ms-flexbox;
 	  display: flex;
-	  -webkit-flex-direction: column-reverse;
-	  flex-direction: column-reverse;
+	  -webkit-flex-direction: column;
+	  flex-direction: column;
 	  
 	  .intro {
 		width: 80%;

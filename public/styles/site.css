@@ -511,8 +511,8 @@ table {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-flex-direction: column-reverse;
-      flex-direction: column-reverse; }
+      -webkit-flex-direction: column;
+      flex-direction: column; }
       #intro .intro-text .intro {
         width: 80%; }
   #citation {
@@ -728,15 +728,17 @@ table {
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        -webkit-justify-content: space-evenly;
-        justify-content: space-evenly;
+        flex-direction: column;
+        -webkit-justify-content: center;
+        justify-content: center;
         float: none;
         margin: 0 auto;
         padding-top: 5%; }
         #blog-jumbotron .blog-nav-container .blog-nav .blog-nav-link {
           font-size: 1.1em;
-          margin-right: 0;
-          letter-spacing: 2px; }
+          margin-left: 5%;
+          letter-spacing: 2px;
+          margin-top: 3%; }
     #blog-jumbotron .blog-intro {
       width: 80%;
       margin: 15% auto; }
