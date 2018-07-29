@@ -825,6 +825,9 @@ table {
     margin-bottom: 10%; }
     .post-container .post-article .social-links-container .social-link {
       width: 4%; }
+  .post-container #disqus_thread {
+    width: 70%;
+    margin: 5% auto 5% auto; }
 
 @media only screen and (max-width: 800px) {
   .post-container .post-article .post-back {
@@ -850,7 +853,9 @@ table {
     .post-container .post-article .post p {
       margin-top: 10%; }
   .post-container .post-article .social-links-container .social-link {
-    width: 10%; } }
+    width: 10%; }
+  #disqus_thread {
+    width: 90%; } }
 
 @media (min-height: 1024px) and (min-width: 800px) {
   #body .privacy-intro {
