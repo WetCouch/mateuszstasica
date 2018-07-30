@@ -173,6 +173,9 @@ table {
         letter-spacing: 3px;
         text-decoration: none;
         z-index: 1; }
+      #intro #nav .links-container .links-icon {
+        z-index: 1;
+        width: 3%; }
   #intro .intro-text {
     height: 45%;
     background-color: white;
@@ -514,6 +517,9 @@ table {
         #intro #nav .links-container .links {
           font-size: 1.1em;
           margin-top: 5%; }
+        #intro #nav .links-container .links-icon {
+          margin-top: 10%;
+          width: 10%; }
     #intro .intro-text {
       display: -webkit-box;
       display: -webkit-flex;

@@ -84,6 +84,11 @@
 		text-decoration: none;
 		z-index: 1;
 	  }
+	  
+	  .links-icon {
+		z-index: 1;
+		width: 3%;
+	  }
 	}
   }
   
@@ -544,6 +549,10 @@
 		.links {
 		  font-size: 1.1em;
 		  margin-top: 5%;
+		}
+		.links-icon {
+		  margin-top: 10%;
+		  width: 10%;
 		}
 	  }
 	}
