@@ -142,7 +142,7 @@ table {
       width: 100%; }
   #intro #nav {
     font-family: 'Lato', sans-serif;
-    width: 55%;
+    width: 65%;
     height: 4%;
     margin: 0 auto;
     background-color: black;
@@ -176,10 +176,12 @@ table {
   #intro .intro-text {
     height: 45%;
     background-color: white;
-    font-family: 'Lato', sans-serif; }
+    font-family: 'Lato', sans-serif;
+    color: #2d2d2f; }
     #intro .intro-text .intro-bold {
-      font-weight: 500;
-      color: #988e77; }
+      font-weight: 700;
+      color: #000000;
+      letter-spacing: 3px; }
     #intro .intro-text .intro-link {
       font-weight: 700;
       color: #246c9c;
@@ -234,8 +236,9 @@ table {
       font-weight: 500;
       letter-spacing: 2px; }
     #description-1 .desc-sidetext .intro-bold {
-      font-weight: 500;
-      color: #988e77; }
+      font-weight: 700;
+      color: black;
+      letter-spacing: 3px; }
     #description-1 .desc-sidetext hr {
       width: 20%;
       border: none;
@@ -246,7 +249,8 @@ table {
       letter-spacing: 1px;
       width: 75%;
       text-align: justify;
-      margin: 7% 0 7% 0; }
+      margin: 7% 0 7% 0;
+      color: #2d2d2f; }
 
 #citation {
   font-family: 'Lato', sans-serif;
@@ -285,12 +289,14 @@ table {
     line-height: 150%;
     font-size: 1.1em;
     padding-left: 5%;
-    text-align: justify; }
+    text-align: justify;
+    color: #2d2d2f; }
     #citation .citation-sidetext .citation-sidetext-pg {
       margin-bottom: 4%; }
       #citation .citation-sidetext .citation-sidetext-pg .intro-bold {
-        font-weight: 500;
-        color: #988e77; }
+        font-weight: 700;
+        color: black;
+        letter-spacing: 3px; }
 
 #description-2 {
   margin-top: 10%;
@@ -336,10 +342,11 @@ table {
         width: 75%;
         text-align: justify;
         margin: 3% 0 3% 0;
-        font-size: 1.05em; }
+        font-size: 1.05em;
+        color: #2d2d2f; }
         #description-2 .desc-section .section-sidetext .sidetext-paragraph .sidetext-bold {
           font-weight: 700;
-          color: #988e77;
+          color: black;
           text-decoration: none;
           letter-spacing: 3px;
           font-size: 1.05em; }
