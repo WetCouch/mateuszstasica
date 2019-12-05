@@ -39,10 +39,12 @@
 		<meta name="keywords" content="{{# each data.post.categories}}{{name}}, {{/each}}">
 	{{else}}
 		<title>Mateusz Stasica</title>
-		<meta name="description" content="Mateusz Stasica - nauka języków, kursy i wykłady edukacyjne oraz językowe, korepetycje z angielskiego i francuskiego. Rozwój osobisty i rewolucja w zakresie nauczania.">
+		<meta name="description"
+			  content="Mateusz Stasica - nauka języków, kursy i wykłady edukacyjne oraz językowe, korepetycje z angielskiego i francuskiego. Rozwój osobisty i rewolucja w zakresie nauczania.">
 		<meta property="og:image" content="{{baseUrl}}/images/logo.png">
 		<meta name="twitter:image:src" content="{{baseUrl}}/images/logo.png">
-		<meta name="keywords" content="języki, wykłady, kursy, korepetycje, edukacja, rozwój osobisty, angielski, francuski, biznes">
+		<meta name="keywords"
+			  content="języki, wykłady, kursy, korepetycje, edukacja, rozwój osobisty, angielski, francuski, biznes">
 	{{/if}}
 
 	{{!-- This file provides the default styling for the KeystoneJS Content Editor
@@ -60,11 +62,42 @@
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123031960-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+
 		gtag('js', new Date());
 		gtag('config', 'UA-123031960-1');
 	</script>
 
+	<!-- Facebook Pixel Code -->
+	<script>
+		!function (f, b, e, v, n, t, s) {
+			if (f.fbq) return;
+			n = f.fbq = function () {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n;
+			n.push = n;
+			n.loaded = !0;
+			n.version = '2.0';
+			n.queue = [];
+			t = b.createElement(e);
+			t.async = !0;
+			t.src = v;
+			s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '2035298100045129');
+		fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+				   src="https://www.facebook.com/tr?id=2035298100045129&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- End Facebook Pixel Code -->
 </head>
 <body>
 <div id="body">
@@ -73,8 +106,12 @@
 <div class="container">
 	<div id="footer">
 		<p class="footer-content" id="footer-left">ⓒ 2018 Mateusz Stasica</p>
-		<p class="footer-content" id="footer-center"><a href="/polityka-prywatnosci" class="footer-privacy">Polityka prywatności</a></p>
-		<p class="footer-content" id="footer-right">Made with &lt;3 by <a class="footer-link" href="https://github.com/WetCouch">Wojciech Janoszek</a></p>
+		<p class="footer-content" id="footer-center">
+			<a href="/polityka-prywatnosci" class="footer-privacy">Polityka prywatności</a>
+		</p>
+		<p class="footer-content" id="footer-right">
+			Made with &lt;3 by <a class="footer-link" href="https://github.com/WetCouch">Wojciech Janoszek</a>
+		</p>
 	</div>
 </div>
 {{!--
@@ -88,6 +125,19 @@
     //- them specifically here, instead of bootstrap-3.3.5.min.js
 --}}
 <script src="/js/bootstrap/bootstrap-3.3.5.min.js"></script>
+
+<!-- Newsletter -->
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
+		data-dojo-config="usePlainJson: true, isDebug: false"></script>
+<script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function (L) {
+	L.start({
+		"baseUrl": "mc.us20.list-manage.com",
+		"uuid": "330eeb3d8fc00a3d62ea0e25b",
+		"lid": "3b01489aab",
+		"uniqueMethods": true
+	})
+})</script>
+<!-- End Newsletter -->
 {{{isAdminEditorJS user}}}
 </body>
 </html>
