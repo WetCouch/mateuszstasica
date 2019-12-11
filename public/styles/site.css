@@ -149,7 +149,7 @@ body {
   font-size: 0.9em; }
 
 a {
-  color: black;
+  color: #E74C3C;
   font-weight: bold; }
 
 #header {
@@ -398,7 +398,6 @@ a {
           text-decoration: none;
           font-size: 1.05em; }
         .box-description .desc-section .section-sidetext .sidetext-paragraph .paragraph-link {
-          color: #246c9c;
           font-size: 1em;
           text-decoration: none;
           font-weight: 600; }
@@ -1028,38 +1027,41 @@ ul.list {
   font-size: 1em;
   font-family: 'Raleway', sans-serif;
   padding: 0;
-  margin-bottom: 4em;
+  margin: 20px 0 0;
   width: 100%; }
   ul.list li {
     position: relative;
     display: block;
-    padding: .8em .4em .8em 2em;
+    padding: 20px 40px;
     margin: .5em 0;
-    background: #f9f9f9;
+    border: 1px solid #efefef;
     color: #444;
     text-decoration: none;
     transition: all .2s ease-in-out; }
     ul.list li a {
       display: block;
       width: 100%;
-      font-weight: 700;
+      font-weight: normal;
+      text-align: center;
       text-decoration: none;
-      color: #111; }
+      color: #E74C3C; }
     ul.list li:hover {
-      background: #f3f3f3;
+      background: #fbfbfb;
       text-decoration: none; }
     ul.list li:before {
       content: counter(li);
       counter-increment: li;
       position: absolute;
-      left: -1.5em;
+      right: 25px;
       top: 50%;
-      margin-top: -1.2em;
-      background: #f1f1f1;
-      height: 2em;
-      width: 2em;
-      line-height: 2em;
-      border: .2em solid #fff;
+      transform: translateY(-50%);
+      opacity: 0.15;
+      line-height: 1em;
       text-align: center;
-      font-weight: bold;
-      color: #666; }
+      font-weight: 300;
+      font-size: 38px;
+      color: #E74C3C; }
+      @media only screen and (max-width: 800px) {
+        ul.list li:before {
+          right: 15px;
+          font-size: 28px; } }

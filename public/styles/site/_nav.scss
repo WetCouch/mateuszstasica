@@ -31,7 +31,7 @@
 			&:focus-within,
 			&.active {
 				> a {
-					color: #E74C3C;
+					color: $link-color;
 					outline: none;
 				}
 			}
