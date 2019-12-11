@@ -3,12 +3,18 @@
 	<img src="./images/portraitnew.jpg" alt="" class="img-portrait">
 	<p class="desc">SKUTECZNIEJSZA NAUKA JĘZYKÓW</p>
 </div>
-<div id="nav">
-	<ul class="links-container">
-		<li class="links"><a href="/">główna</a></li>
-		<li class="links"><a href="/dla-firm#contact">kontakt</a></li>
-		<li class="links"><a href="/dla-firm" style="/* color: #434cff */">dla firm / pla school</a></li>
-		<li class="links"><a target="_blank" href="https://sklep.mateuszstasica.pl/" style="/* color: #ff733c */">sklep / zajęcia</a></li>
-		<li class="links"><a href="/blog">więcej</a></li>
+<div class="nav">
+	<ul>
+{{log section}}
+		<li{{#ifeq section 'home'}} class="active"{{/ifeq}}><a href="/">główna</a></li>
+		<li{{#ifeq section 'companies'}} class="active"{{/ifeq}}><a href="/kontakt">kontakt</a></li>
+		<li><a href="https://pla-school.pl" target="_blank">dla firm / pla school</a></li>
+		<li><a href="https://sklep.mateuszstasica.pl/" target="_blank">sklep / zajęcia</a></li>
+		<li{{#ifeq section 'podcast'}} class="active"{{/ifeq}}><a href="#">więcej</a>
+			<ul class="dropdown">
+				<li><a href="/blog">blog</a></li>
+				<li{{#ifeq section 'podcast'}} class="active"{{/ifeq}}><a href="/podcast">podcast</a></li>
+			</ul>
+		</li>
 	</ul>
 </div>

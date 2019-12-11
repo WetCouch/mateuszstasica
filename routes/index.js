@@ -38,7 +38,8 @@ exports = module.exports = function (app) {
 	app.get('/blog/:category?', routes.views.blog);
 	app.get('/blog/post/:post', routes.views.post);
 	app.get('/polityka-prywatnosci', routes.views.privacy);
-	app.get('/dla-firm', routes.views.companies);
+	app.get('/kontakt', routes.views.companies);
+	app.get('/podcast', routes.views.podcast);
 
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
 	// app.get('/protected', middleware.requireUser, routes.views.protected);

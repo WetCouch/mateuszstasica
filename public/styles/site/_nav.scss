@@ -1,36 +1,90 @@
-#nav {
-  background-color: $colorWhite;
-  font-weight: 300;
-  padding: 2%;
-  
-  .nav {
-	display: inline;
+.nav {
+	font-family: 'Lato', sans-serif;
+	width: 100%;
+	height: 42px;
+	background-color: black;
+	font-weight: 300;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
 	
-	.navbar-link {
-	  display: inline;
-	  margin-left: 5%;
-	  
-	  .navbar-label {
-		text-decoration: none;
-		color: $colorDark;
-		font-size: 1.1em;
-		transition: 0.4s;
-	  }
-	  
-	  .navbar-label:hover {
-		color: $colorRed;
-	  }
+	ul {
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
 	}
 	
-	.navbar-active {
-	  .navbar-label {
-		color: $colorGold;
-		font-weight: 400;
-	  }
-	}
-  }
-}
+	> ul {
+		margin: 0 auto;
+		width: 780px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
 
-.test {
-  color: pink;
+		li {
+			position: relative;
+			text-decoration: none;
+			transition-duration: 0.5s;
+			z-index: 1;
+
+			&:hover,
+			&:focus-within,
+			&.active {
+				> a {
+					color: #E74C3C;
+					outline: none;
+				}
+			}
+
+			a {
+				display: block;
+				padding: 10px 20px;
+				color: white;
+				text-decoration: none;
+			}
+
+			ul {
+				visibility: hidden;
+				opacity: 0;
+				display: block;
+				background: black;
+				min-width: 5rem;
+				position: absolute;
+				transition: all 0.2s ease;
+				left: 0;
+				
+				li {
+					clear: both;
+					width: 100%;
+				}
+			}
+			
+			&:hover > ul,
+			&:focus-within > ul,
+			ul:hover,
+			ul:focus {
+				visibility: visible;
+				opacity: 1;
+				display: block;
+			}
+		}
+	}
+
+	
+	@media only screen and (max-width: 800px) {
+		width: 100%;
+		height: auto;
+		
+		ul {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+
+			li {
+				padding: 20px 10px;
+				font-size: 1.1em;
+			}
+		}
+	}	
 }
