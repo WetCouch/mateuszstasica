@@ -170,7 +170,7 @@ a {
   #footer #footer-left span, #footer #footer-left a {
     vertical-align: middle; }
   #footer #footer-left img {
-    height: 16px;
+    height: 20px;
     width: auto; }
   #footer #footer-right .footer-link {
     color: #E74C3C;
@@ -404,7 +404,7 @@ a {
     .box-description .desc-section .citation-container {
       width: 50%;
       font-size: 1.5em;
-      color: #246c9c;
+      color: #ef8b80;
       line-height: 120%;
       padding: 2%;
       text-align: center; }
