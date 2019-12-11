@@ -163,6 +163,7 @@ a {
   justify-content: space-between;
   font-size: 1em;
   padding: 2%;
+  margin-top: 60px;
   flex-shrink: 0;
   bottom: 0; }
   #footer #footer-left a {
@@ -339,7 +340,7 @@ a {
     .picture-description .desc-sidetext #desc-header {
       text-align: center;
       padding-bottom: 1%;
-      border-bottom: 3px solid #246c9c;
+      border-bottom: 3px solid #ef8b80;
       display: inline;
       font-size: 1.2em;
       font-family: 'Lato', sans-serif;
@@ -350,7 +351,7 @@ a {
     .picture-description .desc-sidetext hr {
       width: 20%;
       border: none;
-      border-bottom: solid 2px #246c9c; }
+      border-bottom: solid 2px #ef8b80; }
     .picture-description .desc-sidetext .sidetext-paragraph {
       line-height: 180%;
       width: 75%;
@@ -361,10 +362,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .box-description .desc-link {
-    font-weight: 700;
-    color: #246c9c;
-    text-decoration: none; }
   .box-description .desc-section {
     margin: 5% 0;
     display: flex;
