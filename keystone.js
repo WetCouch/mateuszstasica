@@ -34,6 +34,7 @@ keystone.init({
 	'session': true,
 	'auth': true,
 	'user model': 'User',
+	'wysiwyg cloudinary images': true
 });
 
 // Load your project's Models
