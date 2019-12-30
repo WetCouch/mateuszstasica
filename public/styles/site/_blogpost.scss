@@ -8,11 +8,12 @@
 	}
 	
 	.post-back {
+	  position: absolute;
 	  margin-top: 1%;
 	  text-decoration: none;
-	  padding: 2%;
+	  padding: 75px;
 	  color: #E74C3C;
-	  font-size: 1.25em;
+	  font-size: 1em;
 	  display: block;
 	}
 	
@@ -21,43 +22,46 @@
 	  text-align: center;
 	  
 	  .post-title {
-		font-size: 3.5em;
-		font-weight: 300;
-		text-transform: uppercase;
-		letter-spacing: 4px;
+		max-width: 850px;
+		width: 95%;
 		line-height: 120%;
+		text-align: center;
+		margin: 25px auto;
+		font-size: 28px;
 	  }
 	  
 	  hr {
-		margin-top: 2%;
 		width: 35%;
 		border: 2px solid #2A80B9;
 	  }
 	  
 	  .post-desc {
-		margin-top: 2%;
+		max-width: 700px;
+		margin: 1em auto;
 		font-weight: 300;
-		font-size: 1.9em;
-		letter-spacing: 3px;
+		font-size: 18px;
+		line-height: 150%;
+
 	  }
 	  
 	  .post-date {
 		color: #929292;
 		font-weight: 300;
-		margin-top: 2%;
-		letter-spacing: 3px;
-		font-size: 1.1em;
+		margin-top: 5px;
+		font-size: 0.9em;
 	  }
 	  
-	}
+	}	
 	
 	.post {
-	  padding: 10% 17% 5% 17%;
-	  text-align: justify;
-	  font-size: 1.25em;
-	  letter-spacing: 2px;
-	  line-height: 130%;
-	  font-weight: 400;
+	  font-weight: normal;
+	  font-size: 1rem;
+	  line-height: 1.6;
+	  text-rendering: optimizeLegibility;
+	  margin: 0 auto;
+	  max-width: 700px;
+	  padding: 50px 25px;
+	  
 	  strong {
 		font-weight: 700;
 	  }
@@ -78,28 +82,23 @@
 	}
 	
 	.social-links-container {
-	  display: -webkit-box;
-	  display: -webkit-flex;
-	  display: -ms-flexbox;
+	  margin: 25px auto;
+	  max-width: 200px;
 	  display: flex;
-	  -webkit-flex-direction: row;
 	  flex-direction: row;
-	  -webkit-justify-content: space-around;
-	  justify-content: space-around;
-	  margin-bottom: 10%;
+	  justify-content: space-between;
 	  
 	  .social-link {
-		width: 4%;
+		width: 32px;
 	  }
 	}
 	
   }
   
   #disqus_thread {
-	width: 70%;
-	margin: 5% auto 5% auto;
+	max-width: 700px;
+	margin: 0 auto;
   }
-  
 }
 
 
@@ -113,15 +112,14 @@
 	  .post-back {
 		font-size: 1em;
 		text-align: center;
-		margin-top: 2%;
+		margin-top: 15px;
 	  }
 	  
 	  .post-header {
-		margin-top: 10%;
-		height: 50vh;
+		padding: 0 25px;
 		
 		.post-title {
-		  font-size: 3em;
+		  font-size: 2em;
 		}
 		
 		hr {
@@ -130,21 +128,21 @@
 		}
 		
 		.post-desc {
+		  font-size: 1.5em;
 		  margin-top: 10%;
 		}
 		
 		.post-date {
 		  margin-top: 10%;
 		}
-		
 	  }
 	  
 	  .post {
-		margin-top: 10%;
-		padding: 15% 10%;
+		padding: 0;
+		margin: 20px;
 		letter-spacing: 1px;
 		p {
-		  margin-top: 10%;
+		  margin-top: 25px;
 		}
 	  }
 	  

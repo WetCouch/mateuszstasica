@@ -563,7 +563,6 @@ a {
       #blog-jumbotron .blog-nav-container .blog-nav .nav-selected {
         color: #E74C3C; }
   #blog-jumbotron .blog-intro {
-    text-align: justify;
     width: 50%;
     margin: 5% auto;
     font-size: 1.35em;
@@ -712,43 +711,45 @@ a {
   .post-container .post-article .post-image {
     width: 100%; }
   .post-container .post-article .post-back {
+    position: absolute;
     margin-top: 1%;
     text-decoration: none;
-    padding: 2%;
+    padding: 75px;
     color: #E74C3C;
-    font-size: 1.25em;
+    font-size: 1em;
     display: block; }
   .post-container .post-article .post-header {
     margin-top: 5%;
     text-align: center; }
     .post-container .post-article .post-header .post-title {
-      font-size: 3.5em;
-      font-weight: 300;
-      text-transform: uppercase;
-      letter-spacing: 4px;
-      line-height: 120%; }
+      max-width: 850px;
+      width: 95%;
+      line-height: 120%;
+      text-align: center;
+      margin: 25px auto;
+      font-size: 28px; }
     .post-container .post-article .post-header hr {
-      margin-top: 2%;
       width: 35%;
       border: 2px solid #2A80B9; }
     .post-container .post-article .post-header .post-desc {
-      margin-top: 2%;
+      max-width: 700px;
+      margin: 1em auto;
       font-weight: 300;
-      font-size: 1.9em;
-      letter-spacing: 3px; }
+      font-size: 18px;
+      line-height: 150%; }
     .post-container .post-article .post-header .post-date {
       color: #929292;
       font-weight: 300;
-      margin-top: 2%;
-      letter-spacing: 3px;
-      font-size: 1.1em; }
+      margin-top: 5px;
+      font-size: 0.9em; }
   .post-container .post-article .post {
-    padding: 10% 17% 5% 17%;
-    text-align: justify;
-    font-size: 1.25em;
-    letter-spacing: 2px;
-    line-height: 130%;
-    font-weight: 400; }
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 50px 25px; }
     .post-container .post-article .post strong {
       font-weight: 700; }
     .post-container .post-article .post p {
@@ -762,44 +763,40 @@ a {
     .post-container .post-article .post li {
       margin-top: 1%; }
   .post-container .post-article .social-links-container {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    margin: 25px auto;
+    max-width: 200px;
     display: flex;
-    -webkit-flex-direction: row;
     flex-direction: row;
-    -webkit-justify-content: space-around;
-    justify-content: space-around;
-    margin-bottom: 10%; }
+    justify-content: space-between; }
     .post-container .post-article .social-links-container .social-link {
-      width: 4%; }
+      width: 32px; }
   .post-container #disqus_thread {
-    width: 70%;
-    margin: 5% auto 5% auto; }
+    max-width: 700px;
+    margin: 0 auto; }
 
 @media only screen and (max-width: 800px) {
   .post-container .post-article .post-back {
     font-size: 1em;
     text-align: center;
-    margin-top: 2%; }
+    margin-top: 15px; }
   .post-container .post-article .post-header {
-    margin-top: 10%;
-    height: 50vh; }
+    padding: 0 25px; }
     .post-container .post-article .post-header .post-title {
-      font-size: 3em; }
+      font-size: 2em; }
     .post-container .post-article .post-header hr {
       margin-top: 10%;
       border: 1.5px solid #2A80B9; }
     .post-container .post-article .post-header .post-desc {
+      font-size: 1.5em;
       margin-top: 10%; }
     .post-container .post-article .post-header .post-date {
       margin-top: 10%; }
   .post-container .post-article .post {
-    margin-top: 10%;
-    padding: 15% 10%;
+    padding: 0;
+    margin: 20px;
     letter-spacing: 1px; }
     .post-container .post-article .post p {
-      margin-top: 10%; }
+      margin-top: 25px; }
   .post-container .post-article .social-links-container .social-link {
     width: 10%; }
   #disqus_thread {
