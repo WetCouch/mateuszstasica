@@ -406,7 +406,8 @@
 			align-items: center;
 			height: 100vh;
 			@media (min-width: 320px) and (max-width: 568px) {
-			  	background-position-x: calc(50% - 125px);
+			  	height: 75vh;
+			  	background-position-x: calc(50% - 110px);
 			}
 			margin-bottom: 0;
 

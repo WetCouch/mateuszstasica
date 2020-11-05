@@ -76,7 +76,7 @@
 	
 	@media only screen and (max-width: 800px) {
 	  position: absolute;
-	  bottom: calc(20% - 50px);
+	  bottom: calc(25% - 40px);
 	  width: 100%;
 	  height: auto;
 		
@@ -87,7 +87,7 @@
 		  	align-items: flex-end;
 
 			li {
-				padding: 5px 10px;
+				padding: 4px 10px;
 				font-size: 1.1em;
 			}
 		}

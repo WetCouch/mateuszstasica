@@ -102,7 +102,7 @@ table {
   @media only screen and (max-width: 800px) {
     .nav {
       position: absolute;
-      bottom: calc(20% - 50px);
+      bottom: calc(25% - 40px);
       width: 100%;
       height: auto; }
       .nav ul {
@@ -111,7 +111,7 @@ table {
         justify-content: space-between;
         align-items: flex-end; }
         .nav ul li {
-          padding: 5px 10px;
+          padding: 4px 10px;
           font-size: 1.1em; } }
 
 @font-face {
@@ -480,7 +480,8 @@ a {
       margin-bottom: 0; } }
     @media only screen and (max-width: 800px) and (min-width: 320px) and (max-width: 568px) {
       #intro .jumbotron {
-        background-position-x: calc(50% - 125px); } }
+        height: 75vh;
+        background-position-x: calc(50% - 110px); } }
 
 @media only screen and (max-width: 800px) {
       #intro .jumbotron .header {
