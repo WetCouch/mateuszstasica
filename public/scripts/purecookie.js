@@ -1,7 +1,7 @@
 // --- Config --- //
 var purecookieTitle = "Cookies"; // Title
 var purecookieDesc = "Ta strona wykorzystuje pliki cookie. "; // Description
-var purecookieLink = '<a href="/polityka-prywatnosci" target="_blank">Szczegóły</a>'; // Cookiepolicy link
+var purecookieLink = '<a href="https://mateuszstasica.pl/blog/polityka-prywatnosci/" target="_blank">Szczegóły</a>'; // Cookiepolicy link
 var purecookieButton = "Akceptuję"; // Button text
 // ---        --- //
 
