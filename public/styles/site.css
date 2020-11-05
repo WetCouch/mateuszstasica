@@ -46,10 +46,11 @@ table {
   border-spacing: 0; }
 
 .nav {
+  position: absolute;
+  bottom: 0;
   font-family: 'Lato', sans-serif;
   width: 100%;
   height: 42px;
-  background-color: black;
   font-weight: 300;
   display: flex;
   flex-direction: row;
@@ -70,12 +71,14 @@ table {
       transition-duration: 0.5s;
       z-index: 1; }
       .nav > ul li:hover > a, .nav > ul li:focus-within > a, .nav > ul li.active > a {
-        color: #E74C3C;
+        color: white;
+        opacity: .9;
         outline: none; }
       .nav > ul li a {
         display: block;
         padding: 10px 20px;
         color: white;
+        opacity: .75;
         text-decoration: none; }
       .nav > ul li ul {
         visibility: hidden;
@@ -98,15 +101,17 @@ table {
         display: block; }
   @media only screen and (max-width: 800px) {
     .nav {
+      position: absolute;
+      bottom: calc(20% - 50px);
       width: 100%;
       height: auto; }
       .nav ul {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center; }
+        align-items: flex-end; }
         .nav ul li {
-          padding: 20px 10px;
+          padding: 5px 10px;
           font-size: 1.1em; } }
 
 @font-face {
@@ -149,7 +154,7 @@ body {
   font-size: 0.9em; }
 
 a {
-  color: #E74C3C;
+  color: #2D3271;
   font-weight: bold; }
 
 #header {
@@ -174,7 +179,7 @@ a {
     height: 20px;
     width: auto; }
   #footer #footer-right .footer-link {
-    color: #E74C3C;
+    color: #2D3271;
     text-decoration: none;
     letter-spacing: 2px; }
   #footer .footer-privacy {
@@ -234,16 +239,20 @@ a {
   .caption .text-center {
     text-align: center; }
   .caption .center {
-    margin: 100px 0;
+    margin: 20px 0;
     text-align: center; }
 
 #intro {
   display: flex;
   flex-direction: column;
-  height: 450px; }
+  height: 60vh; }
   #intro .jumbotron {
     height: 100%;
+    background-position-x: -280px;
     background-color: black;
+    background-image: url("../images/portait.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
     position: relative; }
     #intro .jumbotron .img-portrait {
       height: 100%;
@@ -263,6 +272,10 @@ a {
       z-index: 1; }
       #intro .jumbotron .header .wider {
         font-size: 1.1em; }
+      #intro .jumbotron .header a {
+        text-decoration: none;
+        color: inherit;
+        font-weight: inherit; }
     #intro .jumbotron .desc {
       font-family: 'Capsuula', sans-serif;
       font-size: 2.5em;
@@ -308,7 +321,7 @@ a {
       float: right; }
 
 .picture-description {
-  margin-top: 5%;
+  margin: 5% 0 60px;
   height: 100vh;
   position: relative; }
   .picture-description .desc-sidepic {
@@ -340,7 +353,7 @@ a {
     .picture-description .desc-sidetext #desc-header {
       text-align: center;
       padding-bottom: 1%;
-      border-bottom: 3px solid #ef8b80;
+      border-bottom: 3px solid #434aa8;
       display: inline;
       font-size: 1.2em;
       font-family: 'Lato', sans-serif;
@@ -351,7 +364,7 @@ a {
     .picture-description .desc-sidetext hr {
       width: 20%;
       border: none;
-      border-bottom: solid 2px #ef8b80; }
+      border-bottom: solid 2px #434aa8; }
     .picture-description .desc-sidetext .sidetext-paragraph {
       line-height: 180%;
       width: 75%;
@@ -363,7 +376,7 @@ a {
   flex-direction: column;
   align-items: center; }
   .box-description .desc-section {
-    margin: 5% 0;
+    margin: 100px 0;
     display: flex;
     flex-direction: row; }
     .box-description .desc-section .section-sidetext {
@@ -401,7 +414,7 @@ a {
     .box-description .desc-section .citation-container {
       width: 50%;
       font-size: 1.5em;
-      color: #ef8b80;
+      color: #434aa8;
       line-height: 120%;
       padding: 2%;
       text-align: center; }
@@ -426,7 +439,8 @@ a {
         background-color: black;
         display: flex;
         justify-content: center;
-        align-items: center; }
+        align-items: center;
+        padding: 15px; }
         .box-description .desc-section .section-title .section-header-container .section-header {
           text-align: center;
           font-family: 'Lato', sans-serif;
@@ -464,12 +478,9 @@ a {
       align-items: center;
       height: 100vh;
       margin-bottom: 0; } }
-    @media only screen and (max-width: 800px) and (min-width: 320px) and (max-width: 480px) {
-      #intro .jumbotron {
-        height: 480px; } }
     @media only screen and (max-width: 800px) and (min-width: 320px) and (max-width: 568px) {
       #intro .jumbotron {
-        height: 568px; } }
+        background-position-x: calc(50% - 125px); } }
 
 @media only screen and (max-width: 800px) {
       #intro .jumbotron .header {
@@ -483,7 +494,7 @@ a {
         width: 100%;
         height: auto; }
       #intro .jumbotron .desc {
-        bottom: 1%;
+        bottom: 5px;
         font-size: 2em; }
     #intro .intro-text {
       display: flex;
@@ -719,7 +730,7 @@ a {
     margin-top: 1%;
     text-decoration: none;
     padding: 75px;
-    color: #E74C3C;
+    color: #171A3A;
     font-size: 2.5em;
     display: block; }
   .post-container .post-article .post-header {
@@ -783,7 +794,7 @@ a {
     display: none; }
   .post-container .post-article .post-back-mobile {
     text-decoration: none;
-    color: #E74C3C;
+    color: #171A3A;
     font-size: 1em;
     display: block;
     position: relative;
@@ -1049,7 +1060,7 @@ ul.list {
       font-weight: normal;
       text-align: center;
       text-decoration: none;
-      color: #E74C3C; }
+      color: #2D3271; }
     ul.list li:hover {
       background: #fbfbfb;
       text-decoration: none; }
@@ -1065,7 +1076,7 @@ ul.list {
       text-align: center;
       font-weight: 300;
       font-size: 38px;
-      color: #E74C3C; }
+      color: #2D3271; }
       @media only screen and (max-width: 800px) {
         ul.list li:before {
           right: 15px;

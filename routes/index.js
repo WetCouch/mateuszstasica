@@ -35,8 +35,8 @@ var routes = {
 exports = module.exports = function (app) {
 	// Views
 	app.get('/', routes.views.index);
-	app.get('/blog/:category?', routes.views.blog);
-	app.get('/blog/post/:post', routes.views.post);
+	// app.get('/blog/:category?', routes.views.blog);
+	// app.get('/blog/post/:post', routes.views.post);
 	app.get('/polityka-prywatnosci', routes.views.privacy);
 	app.get('/kontakt', routes.views.companies);
 	app.get('/podcast', routes.views.podcast);

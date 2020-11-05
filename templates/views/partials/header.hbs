@@ -1,21 +1,15 @@
 <div class="jumbotron">
-	<h1 class="header">MATEUSZ<br><span class="wider">STASICA</span></h1>
-	<img src="./images/portraitnew.jpg" alt="" class="img-portrait">
+	<h1 class="header"><a href="/">MATEUSZ<br><span class="wider">STASICA</span></a></h1>
 	<p class="desc">SKUTECZNIEJSZA NAUKA JĘZYKÓW</p>
-</div>
-<div class="nav" id="main">
-	<ul>
-{{log section}}
-		<li{{#ifeq section 'home'}} class="active"{{/ifeq}}><a href="/#main">główna</a></li>
-		<li{{#ifeq section 'companies'}} class="active"{{/ifeq}}><a href="/kontakt#main">kontakt</a></li>
-		<li><a href="https://pla-school.pl" target="_blank">dla firm / pla school</a></li>
-		<li><a href="https://sklep.mateuszstasica.pl/" target="_blank">sklep / zajęcia</a></li>
-		<li{{#ifeq section 'podcast'}} class="active"{{/ifeq}}><a href="#!">więcej</a>
-			<ul class="dropdown">
-				<li><a href="/blog">blog</a></li>
-				<li{{#ifeq section 'podcast'}} class="active"{{/ifeq}}><a href="/podcast#main">podcast</a></li>
-				<li{{#ifeq section 'newsletter'}} class="active"{{/ifeq}}><a href="/newsletter#main">newsletter</a></li>
-			</ul>
-		</li>
-	</ul>
+	
+	<div class="nav" id="main">
+		<ul>
+	{{log section}}
+			<li{{#ifeq section 'companies'}} class="active"{{/ifeq}}><a href="/kontakt#main">kontakt</a></li>
+			<li><a href="https://pla-school.pl" target="_blank">szkoła / pla school</a></li>
+			<li><a href="https://sklep.mateuszstasica.pl/" target="_blank">sklep / lekcje prywatne</a></li>
+			<li><a href="/blog">blog</a></li>
+			<li{{#ifeq section 'podcast'}} class="active"{{/ifeq}}><a href="/podcast#main">podcast</a></li>
+		</ul>
+	</div>
 </div>
