@@ -16,15 +16,7 @@
   src: url('../fonts/Lato-Bold.ttf');
 }
 
-@font-face {
-  font-family: 'Capsuula';
-  src: url("../fonts/Capsuula.ttf");
-}
-
-@font-face {
-  font-family: 'Carrinady';
-  src: url("../fonts/Carrinady.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
 
 html, body {
 	height: 100%;

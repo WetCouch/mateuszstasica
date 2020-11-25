@@ -9,7 +9,7 @@
 
 .caption {
 	margin: 0 auto;
-	padding: 40px 25px;
+	padding: 100px 15px;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
@@ -59,33 +59,21 @@
 #intro {
 	display: flex;
 	flex-direction: column;
-  	height: 60vh;
+  	height: 650px;
 	
 	.jumbotron {
 		height: 100%;
-	  	background-position-x: -280px;
+	  	background-position-x: -140px;
 		background-color: black;
 	  	background-image: url('../images/portait.jpg');
 	  	background-repeat: no-repeat;
 	  	background-size: auto 100%;
 		position: relative;
-
-		.img-portrait {
-			height: 100%;
-			position: absolute;
-			bottom: 0;
-			left: -50px;
-			z-index: 0;
-		}
-
+	  
 		.header {
-			font-family: 'Carrinady', sans-serif;
-			color: #AEAEAE;
-			font-size: 7em;
 			float: right;
-			//letter-spacing: 10px;
-			margin-top: 5%;
-			margin-right: 5%;
+			margin-top: 50px;
+			margin-right: 185px;
 			line-height: 80%;
 			position: relative;
 			z-index: 1;
@@ -98,20 +86,26 @@
 			  text-decoration: none;
 			  color: inherit;
 			  font-weight: inherit;
+			  display: block;
+			}
+  
+			.logo {
+			  width: 350px;
 			}
 		}
 
 		.desc {
-			font-family: 'Capsuula', sans-serif;
+			font-family: 'Montserrat', sans-serif;
 			font-size: 2.5em;
+		  	font-weight: 100;
 			color: white;
 			text-align: center;
-			float: right;
-			//letter-spacing: 5px;
 			position: absolute;
-			bottom: 7%;
-			width: 100%;
-
+			bottom: 120px;
+			right: 150px;
+			width: 420px;
+		  	line-height: 1.2;
+		  	letter-spacing: 4px;
 		}
 
 	}
@@ -397,6 +391,11 @@
 
 @media only screen and (max-width: 800px) {
 
+	.caption {
+	  margin: 0 auto;
+	  padding: 40px 15px;
+	}
+  
 	#intro {
 		height: auto;
 
@@ -410,24 +409,22 @@
 			  	background-position-x: calc(50% - 110px);
 			}
 			margin-bottom: 0;
-
+		  
 			.header {
-				float: none;
-				margin: 5% 0;
-				font-size: 4em;
-				text-align: center;
-			}
-
-			.img-portrait {
-				position: relative;
-				left: 0;
-				width: 100%;
-				height: auto;
+			  	align-self: flex-end;
+				margin: 30px 15px;
+			  
+				.logo {
+				  width: 150px;
+				}
 			}
 
 			.desc {
-			  	bottom: 5px;
-				font-size: 2em;
+			    right: auto;
+			  	bottom: 10px;
+			  	line-height: 1.2;
+				font-size: 1.6em;
+			  	width: 100%;
 			}
 
 		}
