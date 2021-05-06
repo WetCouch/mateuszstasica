@@ -11,7 +11,7 @@
     "handlebars": "^4.7.6",
     "keystone": "^4.2.1",
     "keystone-email": "^1.1.0",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "marked": "^0.3.12",
     "moment": "^2.29.1",
     "node-sass": "^4.14.1",
