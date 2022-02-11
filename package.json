@@ -7,7 +7,7 @@
     "cloudinary": "^1.23.0",
     "debug": "^2.6.9",
     "dotenv": "4.0.0",
-    "express-handlebars": "3.0.0",
+    "express-handlebars": "5.3.1",
     "handlebars": "^4.7.6",
     "keystone": "^4.2.1",
     "keystone-email": "^1.1.0",
